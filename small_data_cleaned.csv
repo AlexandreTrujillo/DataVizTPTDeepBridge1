@@ -1,201 +1,301 @@
 immatriculation,age,sexe,taux,situationFamiliale,nbEnfantsAcharge,X2eme.voiture,marque,nom,puissance,longueur,nbPlaces,nbPortes,couleur,occasion,prix,tranche_age,tranche_taux,tranche_prix
-832 EN 79,23,M,517,Celibataire,0,false,Peugeot,1007 1.4,75,courte,5,5,rouge,false,13750,18-24,500-700,7500-18000
-8330 TO 27,21,M,505,Celibataire,0,false,Renault,Megane 2.0 16V,135,moyenne,5,5,noir,false,22350,18-24,500-700,18000-26000
-3849 QK 83,20,M,158,Seul(e),1,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,gris,false,37100,18-24,150-300,35000-50000
-1103 XU 81,29,M,576,En Couple,3,false,BMW,M5,507,tres longue,5,5,noir,true,66360,24-35,500-700,50000-102000
-6955 LZ 34,38,M,578,En Couple,4,false,BMW,M5,507,tres longue,5,5,gris,true,66360,35-45,500-700,50000-102000
-8521 UB 29,38,M,651,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,blanc,false,12200,35-45,500-700,7500-18000
-6947 BK 20,30,M,519,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,noir,false,12200,24-35,500-700,7500-18000
-6344 SU 62,38,M,677,En Couple,3,false,BMW,M5,507,tres longue,5,5,blanc,true,66360,35-45,500-700,50000-102000
-296 LR 91,38,F,565,Seul(e),3,false,Volvo,S80 T6,272,tres longue,5,5,blanc,false,50500,35-45,500-700,50000-102000
-316 ZY 73,38,M,639,En Couple,1,false,Renault,Laguna 2.0T,170,longue,5,5,blanc,false,27300,35-45,500-700,26000-35000
-632 IU 53,66,M,559,En Couple,0,false,Mercedes,S500,306,tres longue,5,5,blanc,true,70910,60-85,500-700,50000-102000
-8523 JT 97,70,F,542,En Couple,2,false,Saab,9.3 1.8T,150,longue,5,5,gris,true,27020,60-85,500-700,26000-35000
-8153 MN 88,38,F,694,Celibataire,0,false,Audi,A3 2.0 FSI,150,moyenne,5,5,gris,true,19950,35-45,500-700,18000-26000
-8957 YR 24,38,F,476,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,rouge,true,8540,35-45,300-500,7500-18000
-16 AU 63,66,F,443,En Couple,0,false,Seat,Toledo 1.6,102,longue,5,5,bleu,false,18880,60-85,300-500,18000-26000
-2096 KI 36,42,M,991,Seul(e),2,false,BMW,M5,507,tres longue,5,5,blanc,false,94800,35-45,900-1300,50000-102000
-1922 HI 18,51,M,673,En Couple,3,true,Mercedes,S500,306,tres longue,5,5,bleu,true,70910,45-60,500-700,50000-102000
-9525 AV 49,44,M,489,Celibataire,0,false,Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,rouge,true,16029,35-45,300-500,7500-18000
-2497 RK 77,40,M,520,En Couple,3,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,gris,false,49200,35-45,500-700,35000-50000
-775 JS 18,38,M,341,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,bleu,false,18310,35-45,300-500,18000-26000
-6636 LI 74,21,M,497,En Couple,1,false,Renault,Laguna 2.0T,170,longue,5,5,blanc,true,19110,18-24,300-500,18000-26000
-6966 DI 78,49,M,579,En Couple,0,false,Saab,9.3 1.8T,150,longue,5,5,gris,true,27020,45-60,500-700,26000-35000
-879 WX 33,25,M,212,En Couple,2,true,Audi,A2 1.4,75,courte,5,5,noir,false,18310,24-35,150-300,18000-26000
-4104 SF 96,45,M,973,En Couple,1,true,Audi,A2 1.4,75,courte,5,5,rouge,false,18310,45-60,900-1300,18000-26000
-953 EY 86,38,M,595,En Couple,1,true,Peugeot,1007 1.4,75,courte,5,5,noir,false,13750,35-45,500-700,7500-18000
-471 GD 82,38,M,538,Celibataire,0,false,Renault,Megane 2.0 16V,135,moyenne,5,5,bleu,false,22350,35-45,500-700,18000-26000
-1660 EJ 91,38,F,675,En Couple,0,false,Renault,Laguna 2.0T,170,longue,5,5,bleu,false,27300,35-45,500-700,26000-35000
-752 LE 40,38,M,485,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,rouge,true,8540,35-45,300-500,7500-18000
-4833 HP 21,38,M,935,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,gris,false,18310,35-45,900-1300,18000-26000
-6227 EV 60,38,M,505,En Couple,3,true,Volvo,S80 T6,272,tres longue,5,5,noir,false,50500,35-45,500-700,50000-102000
-2464 NW 55,38,F,562,Celibataire,0,false,BMW,120i,150,moyenne,5,5,gris,true,25060,35-45,500-700,18000-26000
-2005 JM 58,29,F,577,En Couple,1,false,Volvo,S80 T6,272,tres longue,5,5,rouge,false,50500,24-35,500-700,50000-102000
-9335 QG 36,39,M,515,Celibataire,0,false,BMW,120i,150,moyenne,5,5,blanc,true,25060,35-45,500-700,18000-26000
-9719 GR 77,38,M,513,En Couple,1,true,Volkswagen,Polo 1.2 6V,55,courte,5,3,bleu,false,12200,35-45,500-700,7500-18000
-7182 XT 28,38,M,306,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,rouge,false,18310,35-45,300-500,18000-26000
-3145 TH 19,38,F,523,Celibataire,0,false,Mini,Copper 1.6 16V,115,courte,5,5,noir,true,12740,35-45,500-700,7500-18000
-2337 FL 86,61,F,892,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,noir,false,18310,60-85,700-900,18000-26000
-6345 QG 36,54,M,462,Celibataire,0,false,Nissan,Almera 1.8,115,moyenne,5,5,rouge,false,16450,45-60,300-500,7500-18000
-4732 EB 19,24,M,579,En Couple,1,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,bleu,true,25970,24-35,500-700,18000-26000
-1563 DU 54,56,M,502,En Couple,2,false,Seat,Toledo 1.6,102,longue,5,5,noir,false,18880,45-60,500-700,18000-26000
-7927 KG 76,30,F,680,En Couple,3,false,BMW,M5,507,tres longue,5,5,rouge,true,66360,24-35,500-700,50000-102000
-2929 QH 63,31,M,696,En Couple,1,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,blanc,false,49200,24-35,500-700,35000-50000
-2191 XJ 76,23,M,584,En Couple,1,false,BMW,M5,507,tres longue,5,5,blanc,true,66360,18-24,500-700,50000-102000
-7292 LH 95,46,F,822,En Couple,0,false,BMW,M5,507,tres longue,5,5,blanc,false,94800,45-60,700-900,50000-102000
-5565 KC 73,56,M,645,En Couple,0,false,Mercedes,S500,306,tres longue,5,5,blanc,true,70910,45-60,500-700,50000-102000
-9388 CH 22,34,F,358,En Couple,2,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,bleu,false,37100,24-35,300-500,35000-50000
-8310 TY 38,38,F,618,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,blanc,false,12200,35-45,500-700,7500-18000
-9290 ME 50,24,M,589,Celibataire,0,false,Renault,Megane 2.0 16V,135,moyenne,5,5,gris,false,22350,24-35,500-700,18000-26000
-7450 VI 34,38,F,262,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,noir,false,18310,35-45,150-300,18000-26000
-3737 GU 42,43,M,654,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,bleu,false,12200,35-45,500-700,7500-18000
-8950 VB 19,41,F,931,En Couple,4,true,BMW,M5,507,tres longue,5,5,rouge,false,94800,35-45,900-1300,50000-102000
-7868 UV 93,66,M,531,En Couple,0,false,Saab,9.3 1.8T,150,longue,5,5,noir,true,27020,60-85,500-700,26000-35000
-5135 ZY 30,57,F,682,En Couple,1,true,Peugeot,1007 1.4,75,courte,5,5,noir,false,13750,45-60,500-700,7500-18000
-7362 AF 80,32,M,363,En Couple,4,false,BMW,M5,507,tres longue,5,5,bleu,false,94800,24-35,300-500,50000-102000
-701 LV 51,29,M,543,En Couple,0,false,Ford,Mondeo 1.8,125,longue,5,5,rouge,false,23900,24-35,500-700,18000-26000
-1809 PS 29,20,M,830,En Couple,4,false,BMW,M5,507,tres longue,5,5,noir,false,94800,18-24,700-900,50000-102000
-5470 US 14,48,F,483,En Couple,0,false,Seat,Toledo 1.6,102,longue,5,5,noir,false,18880,45-60,300-500,18000-26000
-8779 FP 68,39,M,522,En Couple,2,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,blanc,false,49200,35-45,500-700,35000-50000
-7249 SH 66,57,M,650,En Couple,0,false,Saab,9.3 1.8T,150,longue,5,5,bleu,true,27020,45-60,500-700,26000-35000
-4845 HF 78,38,F,656,En Couple,3,true,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,blanc,false,49200,35-45,500-700,35000-50000
-915 CP 21,38,M,859,En Couple,2,false,BMW,M5,507,tres longue,5,5,bleu,false,94800,35-45,700-900,50000-102000
-9719 UM 13,38,F,461,En Couple,3,false,Nissan,Maxima 3.0 V6,200,tres longue,5,5,blanc,false,30000,35-45,300-500,26000-35000
-7804 NU 79,60,M,527,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,rouge,true,12817,60-85,500-700,7500-18000
-5489 DC 93,39,M,435,Celibataire,0,false,Renault,Megane 2.0 16V,135,moyenne,5,5,bleu,true,15644,35-45,300-500,7500-18000
-2493 GT 58,67,M,556,Celibataire,0,false,Mercedes,A200,136,moyenne,5,5,gris,true,18130,60-85,500-700,18000-26000
-7602 OK 20,44,M,564,En Couple,4,false,BMW,M5,507,tres longue,5,5,blanc,true,66360,35-45,500-700,50000-102000
-6771 SG 25,38,M,524,Celibataire,0,false,Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,rouge,false,22900,35-45,500-700,18000-26000
-4589 OH 30,38,M,492,Celibataire,0,false,Kia,Picanto 1.1,65,courte,5,5,bleu,false,8990,35-45,300-500,7500-18000
-1877 NT 73,40,M,451,En Couple,2,true,Kia,Picanto 1.1,65,courte,5,5,blanc,false,8990,35-45,300-500,7500-18000
-8801 ZB 36,38,F,508,En Couple,0,true,Lancia,Ypsilon 1.4 16V,90,courte,5,3,bleu,false,13500,35-45,500-700,7500-18000
-1738 HA 68,38,M,771,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,rouge,false,18310,35-45,700-900,18000-26000
-1721 SN 35,20,M,508,En Couple,1,false,BMW,M5,507,tres longue,5,5,gris,true,66360,18-24,500-700,50000-102000
-6777 WH 97,44,M,597,En Couple,0,false,Volvo,S80 T6,272,tres longue,5,5,blanc,false,50500,35-45,500-700,50000-102000
-6162 CR 10,19,F,227,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,noir,false,18310,18-24,150-300,18000-26000
-2624 AR 19,38,M,678,Seul(e),2,false,Fiat,Croma 2.2,147,longue,5,5,rouge,false,24780,35-45,500-700,18000-26000
-4652 HS 88,22,M,564,En Couple,4,false,BMW,M5,507,tres longue,5,5,blanc,true,66360,18-24,500-700,50000-102000
-1264 ZX 48,19,M,496,Celibataire,0,false,Peugeot,1007 1.4,75,courte,5,5,bleu,true,9625,18-24,300-500,7500-18000
-9449 UD 55,33,F,583,Celibataire,0,false,Peugeot,1007 1.4,75,courte,5,5,blanc,false,13750,24-35,500-700,7500-18000
-5988 UC 24,42,M,603,En Couple,4,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,gris,false,49200,35-45,500-700,35000-50000
-9390 SG 39,30,M,519,En Couple,0,false,Fiat,Croma 2.2,147,longue,5,5,noir,false,24780,24-35,500-700,18000-26000
-8348 WU 48,52,M,188,En Couple,0,false,Mercedes,S500,306,tres longue,5,5,rouge,false,101300,45-60,150-300,50000-102000
-7380 TU 54,38,M,366,En Couple,3,false,BMW,M5,507,tres longue,5,5,bleu,false,94800,35-45,300-500,50000-102000
-270 MH 79,38,M,510,En Couple,3,false,Volvo,S80 T6,272,tres longue,5,5,noir,false,50500,35-45,500-700,50000-102000
-2961 EB 11,25,F,254,En Couple,4,false,BMW,M5,507,tres longue,5,5,rouge,false,94800,24-35,150-300,50000-102000
-4915 MY 53,22,M,874,En Couple,0,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,noir,false,37100,18-24,700-900,35000-50000
-7856 RK 16,45,M,495,Celibataire,0,false,Nissan,Almera 1.8,115,moyenne,5,5,blanc,false,16450,45-60,300-500,7500-18000
-5009 SR 71,24,M,661,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,noir,false,12200,24-35,500-700,7500-18000
-6100 KV 51,38,F,455,En Couple,2,false,Renault,Laguna 2.0T,170,longue,5,5,blanc,true,19110,35-45,300-500,18000-26000
-6088 EB 17,61,F,224,En Couple,2,false,Saab,9.3 1.8T,150,longue,5,5,bleu,false,38600,60-85,150-300,35000-50000
-6985 VN 15,44,M,295,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,gris,false,18310,35-45,150-300,18000-26000
-4838 VW 14,33,F,497,En Couple,1,false,Fiat,Croma 2.2,147,longue,5,5,blanc,true,17346,24-35,300-500,7500-18000
-8974 WB 68,20,M,497,En Couple,2,false,Renault,Laguna 2.0T,170,longue,5,5,gris,true,19110,18-24,300-500,18000-26000
-1362 XI 84,44,M,529,En Couple,3,false,Volvo,S80 T6,272,tres longue,5,5,gris,false,50500,35-45,500-700,50000-102000
-4794 TM 39,67,F,519,En Couple,2,false,Saab,9.3 1.8T,150,longue,5,5,rouge,true,27020,60-85,500-700,26000-35000
-1383 PK 43,38,M,465,Celibataire,0,false,Daihatsu,Cuore 1.0,58,courte,5,3,gris,false,8850,35-45,300-500,7500-18000
-6192 RD 36,62,F,648,Celibataire,0,false,Peugeot,1007 1.4,75,courte,5,5,noir,false,13750,60-85,500-700,7500-18000
-5790 DH 85,26,M,445,En Couple,2,false,Skoda,Superb 2.8 V6,193,tres longue,5,5,blanc,false,31790,24-35,300-500,26000-35000
-6674 RU 83,29,M,211,En Couple,1,true,Audi,A2 1.4,75,courte,5,5,rouge,false,18310,24-35,150-300,18000-26000
-8188 FO 36,18,M,879,En Couple,1,true,Audi,A2 1.4,75,courte,5,5,blanc,false,18310,18-24,700-900,18000-26000
-2630 NJ 45,38,M,999,En Couple,4,false,BMW,M5,507,tres longue,5,5,rouge,false,94800,35-45,900-1300,50000-102000
-1493 LS 68,36,M,436,En Couple,2,false,Nissan,Primera 1.6,109,longue,5,5,bleu,false,18650,35-45,300-500,18000-26000
-8506 IB 64,50,F,629,Celibataire,0,false,Mercedes,A200,136,moyenne,5,5,noir,true,18130,45-60,500-700,18000-26000
-6507 RK 43,38,M,449,Celibataire,0,false,Dacia,Logan 1.6 MPI,90,moyenne,5,5,bleu,false,7500,35-45,300-500,7500-18000
-5326 WL 39,42,M,335,En Couple,3,false,BMW,M5,507,tres longue,5,5,bleu,false,94800,35-45,300-500,50000-102000
-7347 AS 72,68,F,656,Celibataire,0,false,Mini,Copper 1.6 16V,115,courte,5,5,blanc,true,12740,60-85,500-700,7500-18000
-2544 GA 60,64,M,915,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,blanc,false,18310,60-85,900-1300,18000-26000
-7625 US 17,20,M,609,En Couple,2,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,blanc,false,49200,18-24,500-700,35000-50000
-5491 YF 44,62,M,468,En Couple,2,true,Peugeot,1007 1.4,75,courte,5,5,gris,true,9625,60-85,300-500,7500-18000
-331 NG 17,33,F,153,En Couple,2,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,bleu,false,37100,24-35,150-300,35000-50000
-7215 FE 73,21,M,534,En Couple,1,false,Fiat,Croma 2.2,147,longue,5,5,noir,false,24780,18-24,500-700,18000-26000
-560 HI 50,38,M,624,Seul(e),2,false,Renault,Laguna 2.0T,170,longue,5,5,bleu,false,27300,35-45,500-700,26000-35000
-5160 LC 12,26,F,688,En Couple,3,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,noir,false,49200,24-35,500-700,35000-50000
-8103 BQ 21,45,F,485,En Couple,4,false,Nissan,Maxima 3.0 V6,200,tres longue,5,5,bleu,false,30000,45-60,300-500,26000-35000
-9757 BN 15,41,M,157,En Couple,0,false,BMW,M5,507,tres longue,5,5,gris,false,94800,35-45,150-300,50000-102000
-17 PS 61,62,M,500,En Couple,4,false,Skoda,Superb 2.8 V6,193,tres longue,5,5,rouge,false,31790,60-85,500-700,26000-35000
-7980 DH 78,23,M,516,En Couple,1,true,Peugeot,1007 1.4,75,courte,5,5,gris,false,13750,18-24,500-700,7500-18000
-812 DB 10,38,M,562,En Couple,0,false,BMW,M5,507,tres longue,5,5,bleu,true,66360,35-45,500-700,50000-102000
-3151 MV 71,27,F,636,En Couple,0,true,Audi,A2 1.4,75,courte,5,5,rouge,true,12817,24-35,500-700,7500-18000
-4759 OG 24,35,M,620,En Couple,1,false,Ford,Mondeo 1.8,125,longue,5,5,rouge,false,23900,35-45,500-700,18000-26000
-3252 VI 62,38,M,557,Seul(e),3,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,noir,true,25970,35-45,500-700,18000-26000
-3442 ZG 61,33,M,491,Celibataire,0,false,Nissan,Almera 1.8,115,moyenne,5,5,blanc,false,16450,24-35,300-500,7500-18000
-1494 BA 66,47,M,520,Celibataire,0,false,Mercedes,A200,136,moyenne,5,5,rouge,true,18130,45-60,500-700,18000-26000
-2128 JB 10,42,M,557,En Couple,2,false,BMW,M5,507,tres longue,5,5,noir,true,66360,35-45,500-700,50000-102000
-1580 VE 35,19,M,616,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,noir,true,12817,18-24,500-700,7500-18000
-4311 YD 52,38,M,627,Celibataire,0,false,Peugeot,1007 1.4,75,courte,5,5,noir,false,13750,35-45,500-700,7500-18000
-9740 VL 73,38,M,245,En Couple,0,true,Audi,A2 1.4,75,courte,5,5,bleu,false,18310,35-45,150-300,18000-26000
-8911 LI 18,70,M,551,En Couple,3,false,Mercedes,S500,306,tres longue,5,5,noir,true,70910,60-85,500-700,50000-102000
-8561 HF 73,38,F,510,En Couple,1,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,rouge,true,25970,35-45,500-700,18000-26000
-9736 OT 26,35,F,411,Celibataire,0,false,Dacia,Logan 1.6 MPI,90,moyenne,5,5,rouge,false,7500,35-45,300-500,7500-18000
-8443 RK 57,26,M,459,En Couple,0,false,Ford,Mondeo 1.8,125,longue,5,5,blanc,true,16730,24-35,300-500,7500-18000
-5719 ZW 42,42,M,660,En Couple,0,false,Volvo,S80 T6,272,tres longue,5,5,bleu,false,50500,35-45,500-700,50000-102000
-3786 PW 43,38,F,541,En Couple,1,false,Renault,Laguna 2.0T,170,longue,5,5,bleu,false,27300,35-45,500-700,26000-35000
-6634 AK 60,63,M,494,Celibataire,0,false,Kia,Picanto 1.1,65,courte,5,5,gris,false,8990,60-85,300-500,7500-18000
-2541 MJ 18,20,F,598,Celibataire,0,false,Renault,Megane 2.0 16V,135,moyenne,5,5,noir,false,22350,18-24,500-700,18000-26000
-7564 LD 91,38,M,647,En Couple,2,true,Audi,A2 1.4,75,courte,5,5,rouge,true,12817,35-45,500-700,7500-18000
-3834 LY 23,38,F,792,Celibataire,0,false,Audi,A3 2.0 FSI,150,moyenne,5,5,bleu,false,28500,35-45,700-900,26000-35000
-8725 RY 27,38,M,455,En Couple,1,false,Nissan,Primera 1.6,109,longue,5,5,gris,false,18650,35-45,300-500,18000-26000
-9044 MZ 62,61,M,580,Celibataire,0,false,Mercedes,A200,136,moyenne,5,5,rouge,true,18130,60-85,500-700,18000-26000
-9060 NZ 60,53,M,555,Seul(e),1,false,Mercedes,S500,306,tres longue,5,5,blanc,true,70910,45-60,500-700,50000-102000
-5355 QH 14,38,M,662,En Couple,1,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,bleu,true,25970,35-45,500-700,18000-26000
-577 LM 12,23,F,449,En Couple,4,false,Volvo,S80 T6,272,tres longue,5,5,noir,true,35350,18-24,300-500,35000-50000
-2423 YN 81,38,M,443,Celibataire,0,false,Peugeot,1007 1.4,75,courte,5,5,rouge,true,9625,35-45,300-500,7500-18000
-1533 RB 32,38,M,660,En Couple,4,false,Volvo,S80 T6,272,tres longue,5,5,rouge,false,50500,35-45,500-700,50000-102000
-5595 RI 83,38,M,464,En Couple,0,false,Fiat,Croma 2.2,147,longue,5,5,bleu,true,17346,35-45,300-500,7500-18000
-9462 JZ 68,38,M,635,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,rouge,true,12817,35-45,500-700,7500-18000
-478 NG 68,28,F,218,En Couple,4,false,BMW,M5,507,tres longue,5,5,noir,false,94800,24-35,150-300,50000-102000
-8572 IU 44,45,M,559,En Couple,1,false,Renault,Laguna 2.0T,170,longue,5,5,blanc,false,27300,45-60,500-700,26000-35000
-7417 IZ 82,64,F,515,En Couple,0,false,Saab,9.3 1.8T,150,longue,5,5,gris,true,27020,60-85,500-700,26000-35000
-7882 AF 20,38,F,462,Celibataire,0,false,Volkswagen,New Beatle 1.8,110,moyenne,5,5,noir,true,18641,35-45,300-500,18000-26000
-3720 CU 55,38,M,985,En Couple,0,false,BMW,M5,507,tres longue,5,5,blanc,false,94800,35-45,900-1300,50000-102000
-9964 JL 67,38,M,571,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,rouge,true,12817,35-45,500-700,7500-18000
-7350 YZ 76,30,M,361,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,bleu,false,18310,24-35,300-500,18000-26000
-9660 UP 66,28,M,701,En Couple,4,false,BMW,M5,507,tres longue,5,5,rouge,true,66360,24-35,700-900,50000-102000
-928 BF 44,27,F,419,En Couple,0,true,Lancia,Ypsilon 1.4 16V,90,courte,5,3,rouge,true,9450,24-35,300-500,7500-18000
-6236 II 77,33,M,537,En Couple,4,true,Volvo,S80 T6,272,tres longue,5,5,rouge,false,50500,24-35,500-700,50000-102000
-8799 BY 22,61,M,429,En Couple,4,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,bleu,true,34440,60-85,300-500,26000-35000
-1073 EO 88,38,M,964,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,gris,false,18310,35-45,900-1300,18000-26000
-439 FZ 63,27,M,412,Celibataire,0,false,Renault,Megane 2.0 16V,135,moyenne,5,5,blanc,true,15644,24-35,300-500,7500-18000
-4240 BQ 73,27,F,659,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,gris,true,12817,24-35,500-700,7500-18000
-8259 QD 95,38,M,617,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,rouge,false,12200,35-45,500-700,7500-18000
-2273 PT 57,62,M,586,En Couple,1,false,Mercedes,S500,306,tres longue,5,5,bleu,true,70910,60-85,500-700,50000-102000
-2106 AP 76,20,M,423,Celibataire,0,false,Peugeot,1007 1.4,75,courte,5,5,bleu,true,9625,18-24,300-500,7500-18000
-8963 QG 65,38,M,691,En Couple,2,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,bleu,true,25970,35-45,500-700,18000-26000
-2234 HB 30,31,F,621,En Couple,0,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,blanc,true,25970,24-35,500-700,18000-26000
-2444 NO 49,35,M,505,En Couple,0,false,Fiat,Croma 2.2,147,longue,5,5,noir,false,24780,35-45,500-700,18000-26000
-1883 VA 35,43,M,522,Seul(e),2,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,rouge,false,49200,35-45,500-700,35000-50000
-3188 EY 75,70,M,448,En Couple,2,false,Nissan,Primera 1.6,109,longue,5,5,noir,false,18650,60-85,300-500,18000-26000
-7832 DL 16,38,M,682,Celibataire,0,false,Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,rouge,false,22900,35-45,500-700,18000-26000
-205 NH 53,45,M,691,Seul(e),1,false,Renault,Laguna 2.0T,170,longue,5,5,gris,false,27300,45-60,500-700,26000-35000
-5913 XA 18,25,F,562,En Couple,2,false,Renault,Laguna 2.0T,170,longue,5,5,rouge,false,27300,24-35,500-700,26000-35000
-5715 BE 76,66,M,441,En Couple,0,true,Daihatsu,Cuore 1.0,58,courte,5,3,bleu,false,8850,60-85,300-500,7500-18000
-2448 JT 41,30,F,688,Celibataire,0,false,Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,bleu,false,22900,24-35,500-700,18000-26000
-7827 CP 20,38,M,524,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,blanc,false,12200,35-45,500-700,7500-18000
-7587 IY 84,22,M,627,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,noir,true,12817,18-24,500-700,7500-18000
-772 WH 22,70,M,697,En Couple,2,false,Mercedes,S500,306,tres longue,5,5,blanc,true,70910,60-85,500-700,50000-102000
-8204 OX 91,38,M,543,Celibataire,0,false,Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,bleu,false,22900,35-45,500-700,18000-26000
-6248 MT 83,38,M,341,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,gris,false,18310,35-45,300-500,18000-26000
-966 GI 66,61,M,511,Celibataire,0,false,Mercedes,A200,136,moyenne,5,5,bleu,true,18130,60-85,500-700,18000-26000
-7937 ER 56,48,M,700,En Couple,2,false,Saab,9.3 1.8T,150,longue,5,5,rouge,true,27020,45-60,700-900,26000-35000
-4988 BT 17,24,M,175,En Couple,0,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,rouge,false,37100,24-35,150-300,35000-50000
-8392 NT 73,37,F,634,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,bleu,true,12817,35-45,500-700,7500-18000
-9761 DX 61,29,M,622,En Couple,0,false,Fiat,Croma 2.2,147,longue,5,5,rouge,false,24780,24-35,500-700,18000-26000
-4839 KB 70,38,M,468,En Couple,3,false,Volvo,S80 T6,272,tres longue,5,5,noir,true,35350,35-45,300-500,35000-50000
-7539 DU 47,23,M,660,Celibataire,0,false,BMW,120i,150,moyenne,5,5,gris,true,25060,18-24,500-700,18000-26000
-4579 RG 55,35,M,661,En Couple,0,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,gris,true,25970,35-45,500-700,18000-26000
-7248 RU 66,66,M,529,En Couple,2,false,Saab,9.3 1.8T,150,longue,5,5,noir,true,27020,60-85,500-700,26000-35000
-541 RS 84,38,F,615,En Couple,3,false,BMW,M5,507,tres longue,5,5,bleu,true,66360,35-45,500-700,50000-102000
-9463 ZY 76,38,M,900,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,gris,false,18310,35-45,900-1300,18000-26000
-1563 QK 90,38,F,607,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,gris,false,12200,35-45,500-700,7500-18000
-7993 HZ 40,65,M,443,En Couple,3,true,Nissan,Maxima 3.0 V6,200,tres longue,5,5,noir,false,30000,60-85,300-500,26000-35000
-5796 RY 61,38,M,230,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,noir,false,18310,35-45,150-300,18000-26000
-6730 FZ 89,38,M,672,Celibataire,0,false,Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,noir,false,22900,35-45,500-700,18000-26000
-2088 SF 19,38,F,698,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,noir,false,12200,35-45,500-700,7500-18000
-3460 VF 68,25,M,525,Celibataire,0,false,Peugeot,1007 1.4,75,courte,5,5,rouge,false,13750,24-35,500-700,7500-18000
-8941 JH 69,38,M,509,En Couple,0,false,Fiat,Croma 2.2,147,longue,5,5,rouge,false,24780,35-45,500-700,18000-26000
-3138 ZA 65,31,M,220,En Couple,2,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,rouge,false,37100,24-35,150-300,35000-50000
-3315 BU 81,37,M,705,En Couple,2,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,gris,false,37100,35-45,700-900,35000-50000
-3194 XO 17,25,F,484,En Couple,1,false,Renault,Laguna 2.0T,170,longue,5,5,rouge,true,19110,24-35,300-500,18000-26000
-5018 YM 18,40,F,596,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,noir,false,12200,35-45,500-700,7500-18000
-2204 IZ 86,56,F,859,En Couple,2,true,Audi,A2 1.4,75,courte,5,5,gris,false,18310,45-60,700-900,18000-26000
+8270 UD 55,20,M,599,Celibataire,0,false,Peugeot,1007 1.4,75,courte,5,5,noir,false,13750,18-24,500-700,7500-26000
+1924 WG 81,23,M,507,En Couple,3,false,BMW,M5,507,tres longue,5,5,gris,true,66360,18-24,500-700,63000-81500
+7199 HQ 29,38,F,421,Celibataire,0,false,Nissan,Almera 1.8,115,moyenne,5,5,blanc,false,16450,35-45,300-500,7500-26000
+2216 NE 69,38,M,619,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,bleu,true,12817,35-45,500-700,7500-26000
+9983 FH 35,33,M,614,En Couple,4,false,Volvo,S80 T6,272,tres longue,5,5,bleu,false,50500,24-35,500-700,44500-63000
+6177 ER 24,38,M,841,En Couple,0,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,noir,false,37100,35-45,700-900,26000-44500
+8005 AG 66,23,M,481,En Couple,0,false,Fiat,Croma 2.2,147,longue,5,5,gris,true,17346,18-24,300-500,7500-26000
+3514 IT 93,60,M,644,Celibataire,0,false,Mercedes,A200,136,moyenne,5,5,blanc,true,18130,60-85,500-700,7500-26000
+238 CX 56,48,M,662,En Couple,4,true,Mercedes,S500,306,tres longue,5,5,gris,true,70910,45-60,500-700,63000-81500
+9111 FA 82,38,M,680,En Couple,0,false,Renault,Laguna 2.0T,170,longue,5,5,blanc,false,27300,35-45,500-700,26000-44500
+601 TE 85,38,M,483,En Couple,3,false,Volvo,S80 T6,272,tres longue,5,5,blanc,true,35350,35-45,300-500,26000-44500
+184 EM 40,38,M,538,En Couple,0,false,Volvo,S80 T6,272,tres longue,5,5,bleu,false,50500,35-45,500-700,44500-63000
+1634 UJ 80,26,M,908,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,bleu,false,18310,24-35,900-1300,7500-26000
+9177 XS 58,21,M,686,En Couple,2,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,bleu,true,25970,18-24,500-700,7500-26000
+1631 EI 68,22,M,611,En Couple,3,false,Volvo,S80 T6,272,tres longue,5,5,bleu,false,50500,18-24,500-700,44500-63000
+2089 DR 94,20,M,883,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,rouge,false,18310,18-24,700-900,7500-26000
+5598 ZH 82,38,M,296,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,gris,false,18310,35-45,150-300,7500-26000
+687 SY 90,46,M,331,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,gris,false,18310,45-60,300-500,7500-26000
+6636 WK 63,39,F,693,En Couple,1,true,Lancia,Ypsilon 1.4 16V,90,courte,5,3,gris,false,13500,35-45,500-700,7500-26000
+7790 JJ 50,38,M,555,En Couple,3,false,Volvo,S80 T6,272,tres longue,5,5,noir,false,50500,35-45,500-700,44500-63000
+4665 MA 94,61,F,491,En Couple,2,false,Nissan,Primera 1.6,109,longue,5,5,blanc,false,18650,60-85,300-500,7500-26000
+6724 OU 96,38,M,407,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,gris,true,8540,35-45,300-500,7500-26000
+6437 GD 45,38,M,872,En Couple,0,false,BMW,M5,507,tres longue,5,5,noir,false,94800,35-45,700-900,81500-105000
+5478 DU 50,30,M,666,En Couple,3,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,rouge,false,49200,24-35,500-700,44500-63000
+2995 OR 71,38,M,418,En Couple,2,false,Renault,Laguna 2.0T,170,longue,5,5,bleu,true,19110,35-45,300-500,7500-26000
+1400 QV 98,38,F,448,En Couple,1,false,Seat,Toledo 1.6,102,longue,5,5,rouge,false,18880,35-45,300-500,7500-26000
+3126 TJ 65,23,M,536,En Couple,0,false,Volvo,S80 T6,272,tres longue,5,5,blanc,false,50500,18-24,500-700,44500-63000
+2601 EJ 84,38,M,736,En Couple,4,true,BMW,M5,507,tres longue,5,5,bleu,false,94800,35-45,700-900,81500-105000
+7242 IF 93,41,M,685,En Couple,0,false,Fiat,Croma 2.2,147,longue,5,5,bleu,false,24780,35-45,500-700,7500-26000
+5206 DH 82,28,F,505,En Couple,1,false,Renault,Laguna 2.0T,170,longue,5,5,noir,false,27300,24-35,500-700,26000-44500
+7298 SZ 17,43,M,521,En Couple,3,false,BMW,M5,507,tres longue,5,5,blanc,true,66360,35-45,500-700,63000-81500
+958 OY 36,38,M,719,En Couple,1,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,blanc,false,37100,35-45,700-900,26000-44500
+1050 GI 87,25,M,195,En Couple,1,true,Audi,A2 1.4,75,courte,5,5,gris,false,18310,24-35,150-300,7500-26000
+2498 CE 94,38,M,669,En Couple,2,false,BMW,M5,507,tres longue,5,5,gris,true,66360,35-45,500-700,63000-81500
+5572 PH 14,41,M,565,En Couple,3,true,Volvo,S80 T6,272,tres longue,5,5,bleu,false,50500,35-45,500-700,44500-63000
+9401 UC 61,38,M,435,Celibataire,0,false,Peugeot,1007 1.4,75,courte,5,5,blanc,true,9625,35-45,300-500,7500-26000
+4423 JA 86,20,M,674,Celibataire,0,false,Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,gris,false,22900,18-24,500-700,7500-26000
+4098 RI 73,21,M,630,En Couple,4,false,Volvo,S80 T6,272,tres longue,5,5,blanc,false,50500,18-24,500-700,44500-63000
+3586 IF 25,38,M,644,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,bleu,false,12200,35-45,500-700,7500-26000
+6959 OX 56,25,M,755,En Couple,0,false,BMW,M5,507,tres longue,5,5,bleu,false,94800,24-35,700-900,81500-105000
+4996 RK 50,38,M,618,En Couple,2,true,Peugeot,1007 1.4,75,courte,5,5,rouge,false,13750,35-45,500-700,7500-26000
+4795 XD 85,38,M,519,En Couple,0,true,Peugeot,1007 1.4,75,courte,5,5,bleu,false,13750,35-45,500-700,7500-26000
+162 RO 13,23,M,251,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,gris,false,18310,18-24,150-300,7500-26000
+5893 JX 68,23,M,629,En Couple,1,false,Renault,Laguna 2.0T,170,longue,5,5,bleu,false,27300,18-24,500-700,26000-44500
+462 BA 63,54,M,238,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,bleu,false,18310,45-60,150-300,7500-26000
+3849 DB 67,38,F,464,En Couple,1,false,Nissan,Primera 1.6,109,longue,5,5,noir,false,18650,35-45,300-500,7500-26000
+7316 LV 37,48,M,656,Seul(e),2,false,Mercedes,S500,306,tres longue,5,5,gris,true,70910,45-60,500-700,63000-81500
+5912 KF 69,42,F,654,En Couple,1,true,Peugeot,1007 1.4,75,courte,5,5,rouge,false,13750,35-45,500-700,7500-26000
+9579 FB 74,38,M,814,En Couple,0,true,Audi,A2 1.4,75,courte,5,5,noir,false,18310,35-45,700-900,7500-26000
+5676 RN 54,20,M,999,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,rouge,false,18310,18-24,900-1300,7500-26000
+6931 MG 90,31,M,730,En Couple,2,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,noir,false,37100,24-35,700-900,26000-44500
+2949 YH 28,34,M,586,En Couple,0,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,rouge,true,25970,24-35,500-700,7500-26000
+2782 RL 84,23,F,615,En Couple,3,true,BMW,M5,507,tres longue,5,5,gris,true,66360,18-24,500-700,63000-81500
+2735 LZ 81,66,M,665,En Couple,0,false,Saab,9.3 1.8T,150,longue,5,5,blanc,true,27020,60-85,500-700,26000-44500
+6973 ZQ 89,38,M,311,En Couple,2,true,Audi,A2 1.4,75,courte,5,5,gris,false,18310,35-45,300-500,7500-26000
+24 CQ 22,22,M,601,En Couple,0,false,Renault,Laguna 2.0T,170,longue,5,5,noir,false,27300,18-24,500-700,26000-44500
+868 JA 82,38,M,328,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,noir,false,18310,35-45,300-500,7500-26000
+4724 LQ 58,38,M,852,En Couple,1,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,blanc,false,37100,35-45,700-900,26000-44500
+5962 BL 45,43,F,453,En Couple,4,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,noir,true,34440,35-45,300-500,26000-44500
+1143 OA 73,38,M,484,En Couple,4,false,Skoda,Superb 2.8 V6,193,tres longue,5,5,gris,false,31790,35-45,300-500,26000-44500
+3086 BK 33,38,F,665,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,rouge,false,12200,35-45,500-700,7500-26000
+3821 KC 54,65,M,150,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,rouge,false,18310,60-85,150-300,7500-26000
+440 IW 26,38,M,424,Celibataire,0,false,Daihatsu,Cuore 1.0,58,courte,5,3,noir,false,8850,35-45,300-500,7500-26000
+2522 NB 27,38,M,687,Celibataire,0,false,Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,rouge,false,22900,35-45,500-700,7500-26000
+1381 JU 35,33,M,616,En Couple,1,true,Audi,A2 1.4,75,courte,5,5,noir,true,12817,24-35,500-700,7500-26000
+2064 CH 36,60,F,515,Seul(e),3,false,Mercedes,S500,306,tres longue,5,5,rouge,true,70910,60-85,500-700,63000-81500
+9545 SI 37,34,F,723,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,bleu,false,18310,24-35,700-900,7500-26000
+6373 HF 72,27,M,605,Divorce(e),3,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,gris,false,49200,24-35,500-700,44500-63000
+4552 NS 97,20,M,599,Celibataire,0,false,Peugeot,1007 1.4,75,courte,5,5,gris,false,13750,18-24,500-700,7500-26000
+2088 XQ 87,54,M,711,En Couple,2,false,Mercedes,S500,306,tres longue,5,5,bleu,false,101300,45-60,700-900,81500-105000
+7390 DH 54,67,M,606,En Couple,3,false,Mercedes,S500,306,tres longue,5,5,rouge,true,70910,60-85,500-700,63000-81500
+6717 VJ 47,33,M,405,En Couple,0,false,Skoda,Superb 2.8 V6,193,tres longue,5,5,bleu,false,31790,24-35,300-500,26000-44500
+2499 BW 55,24,M,659,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,noir,false,12200,24-35,500-700,7500-26000
+1062 JC 53,23,M,480,En Couple,3,false,Volvo,S80 T6,272,tres longue,5,5,noir,true,35350,18-24,300-500,26000-44500
+6310 WA 82,42,M,656,En Couple,1,true,Audi,A2 1.4,75,courte,5,5,blanc,true,12817,35-45,500-700,7500-26000
+8090 FE 43,25,M,567,En Couple,2,false,Renault,Laguna 2.0T,170,longue,5,5,blanc,false,27300,24-35,500-700,26000-44500
+251 TX 75,62,M,437,En Couple,4,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,blanc,true,34440,60-85,300-500,26000-44500
+3522 WT 30,20,M,345,En Couple,1,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,bleu,false,37100,18-24,300-500,26000-44500
+5020 TO 97,25,F,505,Seul(e),3,false,Ford,Mondeo 1.8,125,longue,5,5,gris,false,23900,24-35,500-700,7500-26000
+6846 LM 85,29,F,152,En Couple,0,true,Audi,A2 1.4,75,courte,5,5,bleu,false,18310,24-35,150-300,7500-26000
+6448 OD 62,61,F,449,Celibataire,0,false,Kia,Picanto 1.1,65,courte,5,5,noir,false,8990,60-85,300-500,7500-26000
+5085 SZ 89,38,F,916,En Couple,1,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,bleu,false,37100,35-45,900-1300,26000-44500
+528 GZ 66,34,F,452,Celibataire,0,false,Renault,Megane 2.0 16V,135,moyenne,5,5,rouge,true,15644,24-35,300-500,7500-26000
+2336 AW 39,38,M,585,En Couple,1,false,Renault,Laguna 2.0T,170,longue,5,5,blanc,false,27300,35-45,500-700,26000-44500
+5512 KD 67,38,F,610,En Couple,3,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,blanc,false,49200,35-45,500-700,44500-63000
+6159 ER 87,40,M,411,En Couple,1,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,rouge,true,34440,35-45,300-500,26000-44500
+9090 SX 33,38,M,516,En Couple,3,true,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,blanc,false,49200,35-45,500-700,44500-63000
+4953 XO 57,35,M,977,En Couple,2,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,blanc,false,37100,35-45,900-1300,26000-44500
+4928 JY 80,23,M,408,Celibataire,0,false,Peugeot,1007 1.4,75,courte,5,5,bleu,true,9625,18-24,300-500,7500-26000
+3378 GZ 14,38,M,548,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,blanc,true,12817,35-45,500-700,7500-26000
+8093 IH 37,38,F,408,En Couple,3,false,Nissan,Maxima 3.0 V6,200,tres longue,5,5,noir,false,30000,35-45,300-500,26000-44500
+5348 LB 39,38,M,229,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,rouge,false,18310,35-45,150-300,7500-26000
+4896 IU 51,45,M,684,En Couple,0,true,Audi,A2 1.4,75,courte,5,5,blanc,true,12817,45-60,500-700,7500-26000
+2696 TL 12,38,F,542,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,gris,false,12200,35-45,500-700,7500-26000
+151 KT 88,43,M,626,En Couple,0,false,Fiat,Croma 2.2,147,longue,5,5,rouge,false,24780,35-45,500-700,7500-26000
+6853 JR 96,38,M,335,En Couple,3,false,BMW,M5,507,tres longue,5,5,gris,false,94800,35-45,300-500,81500-105000
+709 UO 94,38,M,635,Celibataire,0,false,Peugeot,1007 1.4,75,courte,5,5,noir,false,13750,35-45,500-700,7500-26000
+9856 GY 87,50,F,543,En Couple,2,false,Saab,9.3 1.8T,150,longue,5,5,noir,true,27020,45-60,500-700,26000-44500
+1441 YV 18,64,M,487,Seul(e),1,false,Seat,Toledo 1.6,102,longue,5,5,noir,false,18880,60-85,300-500,7500-26000
+6796 RL 13,29,M,460,En Couple,1,false,Renault,Laguna 2.0T,170,longue,5,5,rouge,true,19110,24-35,300-500,7500-26000
+7585 GL 87,60,M,628,En Couple,4,false,Mercedes,S500,306,tres longue,5,5,gris,true,70910,60-85,500-700,63000-81500
+9506 ZY 52,48,M,543,En Couple,1,false,Mercedes,S500,306,tres longue,5,5,blanc,true,70910,45-60,500-700,63000-81500
+9421 XQ 10,31,M,921,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,rouge,false,18310,24-35,900-1300,7500-26000
+7051 VA 55,18,M,613,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,bleu,false,12200,18-24,500-700,7500-26000
+3229 DZ 95,49,M,477,En Couple,1,false,Fiat,Croma 2.2,147,longue,5,5,blanc,true,17346,45-60,300-500,7500-26000
+3901 ED 19,32,M,507,En Couple,2,false,Ford,Mondeo 1.8,125,longue,5,5,bleu,false,23900,24-35,500-700,7500-26000
+6791 HW 47,26,M,697,Celibataire,0,false,BMW,120i,150,moyenne,5,5,blanc,true,25060,24-35,500-700,7500-26000
+1123 CP 12,52,M,957,En Couple,3,false,Mercedes,S500,306,tres longue,5,5,rouge,false,101300,45-60,900-1300,81500-105000
+4371 FN 61,19,M,327,En Couple,2,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,bleu,false,37100,18-24,300-500,26000-44500
+9618 QU 77,38,M,612,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,rouge,false,12200,35-45,500-700,7500-26000
+7633 HP 34,38,M,528,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,bleu,true,12817,35-45,500-700,7500-26000
+1844 VY 63,38,M,490,En Couple,0,true,Kia,Picanto 1.1,65,courte,5,5,blanc,false,8990,35-45,300-500,7500-26000
+9976 FH 64,38,M,725,En Couple,4,false,BMW,M5,507,tres longue,5,5,gris,false,94800,35-45,700-900,81500-105000
+7021 GC 95,38,M,728,En Couple,2,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,noir,false,37100,35-45,700-900,26000-44500
+1863 OH 21,20,M,437,En Couple,3,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,rouge,true,34440,18-24,300-500,26000-44500
+155 KP 17,67,M,252,En Couple,2,true,Audi,A2 1.4,75,courte,5,5,noir,false,18310,60-85,150-300,7500-26000
+1030 LW 18,18,F,463,En Couple,1,false,Nissan,Maxima 3.0 V6,200,tres longue,5,5,noir,false,30000,18-24,300-500,26000-44500
+9855 LI 88,51,M,519,Celibataire,0,false,Mercedes,A200,136,moyenne,5,5,rouge,true,18130,45-60,500-700,7500-26000
+6141 WX 98,38,M,491,En Couple,0,false,Ford,Mondeo 1.8,125,longue,5,5,rouge,true,16730,35-45,300-500,7500-26000
+8735 CX 35,38,F,691,Celibataire,0,false,Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,blanc,false,22900,35-45,500-700,7500-26000
+7215 QZ 23,38,M,856,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,gris,false,18310,35-45,700-900,7500-26000
+9977 AR 85,51,F,478,En Couple,1,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,noir,true,34440,45-60,300-500,26000-44500
+9244 LL 82,38,F,487,En Couple,2,false,Seat,Toledo 1.6,102,longue,5,5,blanc,false,18880,35-45,300-500,7500-26000
+288 IY 98,65,M,589,En Couple,1,false,Saab,9.3 1.8T,150,longue,5,5,gris,true,27020,60-85,500-700,26000-44500
+1712 RR 25,38,M,617,Celibataire,0,false,Peugeot,1007 1.4,75,courte,5,5,gris,false,13750,35-45,500-700,7500-26000
+3299 DH 15,66,F,493,En Couple,3,true,Nissan,Maxima 3.0 V6,200,tres longue,5,5,blanc,false,30000,60-85,300-500,26000-44500
+4446 HL 61,38,M,628,En Couple,2,true,Volkswagen,Polo 1.2 6V,55,courte,5,3,blanc,false,12200,35-45,500-700,7500-26000
+2718 RF 62,43,M,848,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,bleu,false,18310,35-45,700-900,7500-26000
+421 JM 35,43,M,648,En Couple,0,true,Audi,A2 1.4,75,courte,5,5,noir,true,12817,35-45,500-700,7500-26000
+5574 RV 81,38,F,623,En Couple,3,false,Volvo,S80 T6,272,tres longue,5,5,gris,false,50500,35-45,500-700,44500-63000
+2420 IU 41,59,M,918,En Couple,1,false,Mercedes,S500,306,tres longue,5,5,blanc,false,101300,45-60,900-1300,81500-105000
+4984 BC 75,57,M,981,En Couple,3,true,Mercedes,S500,306,tres longue,5,5,blanc,false,101300,45-60,900-1300,81500-105000
+610 AJ 46,34,M,601,En Couple,2,true,Audi,A2 1.4,75,courte,5,5,gris,true,12817,24-35,500-700,7500-26000
+7074 RP 31,56,M,929,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,rouge,false,18310,45-60,900-1300,7500-26000
+2173 HR 32,70,F,970,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,blanc,false,18310,60-85,900-1300,7500-26000
+1247 GZ 44,38,F,723,En Couple,2,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,gris,false,37100,35-45,700-900,26000-44500
+5100 NL 28,39,F,610,Celibataire,0,false,Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,bleu,false,22900,35-45,500-700,7500-26000
+8203 KG 62,38,F,357,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,noir,false,18310,35-45,300-500,7500-26000
+1761 YC 58,57,F,453,En Couple,4,false,Nissan,Maxima 3.0 V6,200,tres longue,5,5,noir,false,30000,45-60,300-500,26000-44500
+1744 IB 74,38,M,644,En Couple,2,false,Renault,Laguna 2.0T,170,longue,5,5,noir,false,27300,35-45,500-700,26000-44500
+2076 VN 67,42,M,419,En Couple,2,false,Renault,Laguna 2.0T,170,longue,5,5,blanc,true,19110,35-45,300-500,7500-26000
+6278 EX 45,38,M,535,En Couple,4,true,Volvo,S80 T6,272,tres longue,5,5,bleu,false,50500,35-45,500-700,44500-63000
+7104 EN 41,21,M,599,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,noir,true,12817,18-24,500-700,7500-26000
+6035 TL 77,37,F,281,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,gris,false,18310,35-45,150-300,7500-26000
+2735 AT 81,38,M,335,En Couple,2,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,blanc,false,37100,35-45,300-500,26000-44500
+9799 ZI 67,68,M,524,Celibataire,0,false,Mercedes,A200,136,moyenne,5,5,rouge,true,18130,60-85,500-700,7500-26000
+7239 OJ 88,38,M,395,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,noir,false,18310,35-45,300-500,7500-26000
+3704 AG 73,19,M,814,En Couple,1,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,rouge,false,37100,18-24,700-900,26000-44500
+9139 CG 18,70,M,411,Celibataire,0,false,Nissan,Almera 1.8,115,moyenne,5,5,noir,false,16450,60-85,300-500,7500-26000
+4530 CF 70,42,M,543,En Couple,3,false,Volvo,S80 T6,272,tres longue,5,5,gris,false,50500,35-45,500-700,44500-63000
+3240 QW 47,43,M,493,En Couple,1,false,Nissan,Maxima 3.0 V6,200,tres longue,5,5,blanc,false,30000,35-45,300-500,26000-44500
+8970 SK 94,18,M,592,En Couple,0,false,Fiat,Croma 2.2,147,longue,5,5,bleu,false,24780,18-24,500-700,7500-26000
+222 CX 90,38,M,417,En Couple,2,false,Fiat,Croma 2.2,147,longue,5,5,gris,true,17346,35-45,300-500,7500-26000
+8532 UH 12,38,M,835,En Couple,0,true,Audi,A2 1.4,75,courte,5,5,noir,false,18310,35-45,700-900,7500-26000
+5568 TR 22,38,F,586,Celibataire,0,false,Mini,Copper 1.6 16V,115,courte,5,5,noir,true,12740,35-45,500-700,7500-26000
+5229 IL 90,44,F,733,En Couple,0,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,rouge,false,37100,35-45,700-900,26000-44500
+9026 UD 78,38,F,441,En Couple,3,false,Volvo,S80 T6,272,tres longue,5,5,gris,true,35350,35-45,300-500,26000-44500
+616 AL 18,38,F,427,Celibataire,0,false,Daihatsu,Cuore 1.0,58,courte,5,3,blanc,false,8850,35-45,300-500,7500-26000
+5745 TJ 49,20,M,702,Marie(e),0,false,Renault,Laguna 2.0T,170,longue,5,5,noir,false,27300,18-24,700-900,26000-44500
+59 OU 85,68,M,659,Celibataire,0,false,Peugeot,1007 1.4,75,courte,5,5,rouge,false,13750,60-85,500-700,7500-26000
+4613 LA 33,38,M,498,En Couple,1,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,blanc,true,34440,35-45,300-500,26000-44500
+6147 SN 50,22,M,574,Celibataire,0,false,BMW,120i,150,moyenne,5,5,bleu,true,25060,18-24,500-700,7500-26000
+5173 AM 28,38,M,607,Celibataire,0,false,Renault,Megane 2.0 16V,135,moyenne,5,5,blanc,false,22350,35-45,500-700,7500-26000
+4392 VB 33,38,M,412,En Couple,2,false,Fiat,Croma 2.2,147,longue,5,5,gris,true,17346,35-45,300-500,7500-26000
+5180 IW 52,38,M,680,Celibataire,0,false,Peugeot,1007 1.4,75,courte,5,5,rouge,false,13750,35-45,500-700,7500-26000
+9866 ZJ 53,38,M,832,En Couple,1,true,Audi,A2 1.4,75,courte,5,5,blanc,false,18310,35-45,700-900,7500-26000
+7321 WL 51,26,M,608,En Couple,1,true,Peugeot,1007 1.4,75,courte,5,5,rouge,false,13750,24-35,500-700,7500-26000
+2217 VC 59,24,F,474,Celibataire,0,false,Renault,Megane 2.0 16V,135,moyenne,5,5,blanc,true,15644,24-35,300-500,7500-26000
+4005 GG 77,60,M,523,Celibataire,0,false,Mercedes,A200,136,moyenne,5,5,rouge,true,18130,60-85,500-700,7500-26000
+2901 FA 96,28,F,677,En Couple,4,true,BMW,M5,507,tres longue,5,5,noir,true,66360,24-35,500-700,63000-81500
+8508 KO 27,42,M,527,Celibataire,0,false,BMW,120i,150,moyenne,5,5,blanc,true,25060,35-45,500-700,7500-26000
+2525 LX 71,38,F,708,Celibataire,0,false,Mini,Copper 1.6 16V,115,courte,5,5,blanc,false,18200,35-45,700-900,7500-26000
+3172 ZY 30,38,F,451,En Couple,2,false,Seat,Toledo 1.6,102,longue,5,5,blanc,false,18880,35-45,300-500,7500-26000
+6513 NG 12,38,M,478,Celibataire,0,false,Dacia,Logan 1.6 MPI,90,moyenne,5,5,gris,false,7500,35-45,300-500,7500-26000
+8388 GT 87,68,F,192,En Couple,0,false,Saab,9.3 1.8T,150,longue,5,5,noir,false,38600,60-85,150-300,26000-44500
+2541 AT 23,26,M,671,En Couple,1,false,Volvo,S80 T6,272,tres longue,5,5,gris,false,50500,24-35,500-700,44500-63000
+319 PF 69,43,M,693,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,gris,true,12817,35-45,500-700,7500-26000
+3507 GL 51,54,M,561,En Couple,0,false,Saab,9.3 1.8T,150,longue,5,5,gris,true,27020,45-60,500-700,26000-44500
+1097 TW 93,38,M,673,En Couple,4,true,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,rouge,false,49200,35-45,500-700,44500-63000
+3058 AE 94,38,M,694,Celibataire,0,false,Renault,Megane 2.0 16V,135,moyenne,5,5,bleu,false,22350,35-45,500-700,7500-26000
+5936 NM 71,35,F,683,En Couple,3,false,BMW,M5,507,tres longue,5,5,blanc,true,66360,35-45,500-700,63000-81500
+6985 PI 55,43,F,558,En Couple,3,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,blanc,false,49200,35-45,500-700,44500-63000
+3997 EF 46,38,M,536,En Couple,1,false,Volvo,S80 T6,272,tres longue,5,5,gris,false,50500,35-45,500-700,44500-63000
+8373 AO 24,21,M,783,En Couple,1,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,blanc,false,37100,18-24,700-900,26000-44500
+1938 ZD 31,69,M,419,Celibataire,0,false,Kia,Picanto 1.1,65,courte,5,5,noir,false,8990,60-85,300-500,7500-26000
+7695 VC 56,23,M,488,Celibataire,0,false,Kia,Picanto 1.1,65,courte,5,5,gris,false,8990,18-24,300-500,7500-26000
+6913 PH 14,32,M,548,Celibataire,0,false,Renault,Megane 2.0 16V,135,moyenne,5,5,blanc,false,22350,24-35,500-700,7500-26000
+5283 RC 69,33,F,500,En Couple,4,false,Skoda,Superb 2.8 V6,193,tres longue,5,5,blanc,false,31790,24-35,500-700,26000-44500
+5307 FM 40,46,F,669,En Couple,2,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,bleu,true,25970,45-60,500-700,7500-26000
+1507 CT 92,38,F,566,En Couple,2,false,Fiat,Croma 2.2,147,longue,5,5,bleu,false,24780,35-45,500-700,7500-26000
+4110 GQ 30,18,M,654,En Couple,0,true,Peugeot,1007 1.4,75,courte,5,5,blanc,false,13750,18-24,500-700,7500-26000
+4640 MB 45,38,F,885,Celibataire,0,false,Mini,Copper 1.6 16V,115,courte,5,5,blanc,false,18200,35-45,700-900,7500-26000
+7578 VB 86,21,F,631,En Couple,0,false,BMW,M5,507,tres longue,5,5,bleu,true,66360,18-24,500-700,63000-81500
+545 UM 66,59,F,975,Celibataire,0,false,Mercedes,A200,136,moyenne,5,5,rouge,false,25900,45-60,900-1300,7500-26000
+6043 PD 52,30,F,629,En Couple,0,true,Audi,A2 1.4,75,courte,5,5,bleu,true,12817,24-35,500-700,7500-26000
+96 LY 37,39,F,620,En Couple,2,false,BMW,M5,507,tres longue,5,5,gris,true,66360,35-45,500-700,63000-81500
+1468 UP 77,38,M,471,En Couple,3,false,Volvo,S80 T6,272,tres longue,5,5,rouge,true,35350,35-45,300-500,26000-44500
+263 PC 32,38,F,468,En Couple,0,false,Ford,Mondeo 1.8,125,longue,5,5,blanc,true,16730,35-45,300-500,7500-26000
+7596 OY 28,70,M,293,Seul(e),2,false,Saab,9.3 1.8T,150,longue,5,5,gris,false,38600,60-85,150-300,26000-44500
+3723 MY 25,24,M,646,Celibataire,0,false,Renault,Megane 2.0 16V,135,moyenne,5,5,noir,false,22350,24-35,500-700,7500-26000
+6499 RZ 30,26,M,379,En Couple,0,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,rouge,false,37100,24-35,300-500,26000-44500
+3672 FP 72,40,M,445,Celibataire,0,false,Nissan,Almera 1.8,115,moyenne,5,5,noir,false,16450,35-45,300-500,7500-26000
+3463 VK 59,25,M,588,En Couple,0,false,Renault,Laguna 2.0T,170,longue,5,5,blanc,false,27300,24-35,500-700,26000-44500
+3981 GQ 39,57,M,628,Celibataire,0,false,Mercedes,A200,136,moyenne,5,5,noir,true,18130,45-60,500-700,7500-26000
+4618 LK 98,38,M,904,En Couple,3,false,BMW,M5,507,tres longue,5,5,bleu,false,94800,35-45,900-1300,81500-105000
+7452 MP 87,35,M,846,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,noir,false,18310,35-45,700-900,7500-26000
+7983 CS 10,38,M,572,En Couple,1,false,Volvo,S80 T6,272,tres longue,5,5,rouge,false,50500,35-45,500-700,44500-63000
+9371 BR 64,38,M,657,En Couple,4,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,bleu,false,49200,35-45,500-700,44500-63000
+2395 KC 83,31,M,692,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,bleu,true,12817,24-35,500-700,7500-26000
+4814 ZU 10,19,M,476,Celibataire,0,false,Dacia,Logan 1.6 MPI,90,moyenne,5,5,blanc,false,7500,18-24,300-500,7500-26000
+7560 WJ 69,40,M,604,En Couple,0,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,bleu,true,25970,35-45,500-700,7500-26000
+3373 PC 11,38,M,488,En Couple,1,true,Daihatsu,Cuore 1.0,58,courte,5,3,gris,false,8850,35-45,300-500,7500-26000
+8790 SD 55,29,M,610,En Couple,1,false,Fiat,Croma 2.2,147,longue,5,5,rouge,false,24780,24-35,500-700,7500-26000
+7646 UG 19,45,F,932,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,rouge,false,18310,45-60,900-1300,7500-26000
+7591 WB 16,41,M,408,Celibataire,0,false,Kia,Picanto 1.1,65,courte,5,5,noir,false,8990,35-45,300-500,7500-26000
+2516 OK 66,53,M,244,En Couple,1,false,Saab,9.3 1.8T,150,longue,5,5,gris,false,38600,45-60,150-300,26000-44500
+4080 ZB 38,38,M,561,Celibataire,0,false,Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,blanc,false,22900,35-45,500-700,7500-26000
+7945 VH 80,38,M,184,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,blanc,false,18310,35-45,150-300,7500-26000
+550 OK 36,42,M,551,Celibataire,0,false,Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,gris,false,22900,35-45,500-700,7500-26000
+8882 TG 50,33,F,581,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,noir,false,12200,24-35,500-700,7500-26000
+2403 DK 26,47,M,613,Celibataire,0,false,Mercedes,A200,136,moyenne,5,5,rouge,true,18130,45-60,500-700,7500-26000
+3974 KA 44,32,M,703,En Couple,1,false,Volvo,S80 T6,272,tres longue,5,5,gris,false,50500,24-35,700-900,44500-63000
+7563 YV 73,29,M,416,En Couple,3,false,Skoda,Superb 2.8 V6,193,tres longue,5,5,noir,false,31790,24-35,300-500,26000-44500
+9929 ZH 65,38,M,200,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,gris,false,18310,35-45,150-300,7500-26000
+4055 ZY 12,41,F,414,Celibataire,0,false,Volkswagen,New Beatle 1.8,110,moyenne,5,5,blanc,true,18641,35-45,300-500,7500-26000
+8751 VQ 23,38,F,503,En Couple,0,false,Fiat,Croma 2.2,147,longue,5,5,noir,true,17346,35-45,500-700,7500-26000
+1080 VY 88,26,F,423,En Couple,0,false,Nissan,Primera 1.6,109,longue,5,5,blanc,false,18650,24-35,300-500,7500-26000
+5861 OC 55,65,M,261,En Couple,2,true,Audi,A2 1.4,75,courte,5,5,blanc,false,18310,60-85,150-300,7500-26000
+4638 MK 36,21,M,662,En Couple,0,false,Renault,Laguna 2.0T,170,longue,5,5,noir,false,27300,18-24,500-700,26000-44500
+3103 WT 91,58,M,373,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,noir,false,18310,45-60,300-500,7500-26000
+310 QH 50,56,F,698,En Couple,1,false,Saab,9.3 1.8T,150,longue,5,5,bleu,true,27020,45-60,500-700,26000-44500
+9858 TT 62,49,M,515,Celibataire,0,false,Mercedes,A200,136,moyenne,5,5,blanc,true,18130,45-60,500-700,7500-26000
+9256 IJ 87,54,M,647,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,blanc,false,12200,45-60,500-700,7500-26000
+9701 SL 63,37,M,505,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,gris,true,12817,35-45,500-700,7500-26000
+5157 XY 88,36,M,633,En Couple,1,false,Fiat,Croma 2.2,147,longue,5,5,rouge,false,24780,35-45,500-700,7500-26000
+7871 MG 10,38,M,403,En Couple,4,false,BMW,M5,507,tres longue,5,5,noir,false,94800,35-45,300-500,81500-105000
+823 ZB 65,23,M,696,Seul(e),1,false,Volvo,S80 T6,272,tres longue,5,5,rouge,false,50500,18-24,500-700,44500-63000
+9213 SP 14,30,F,326,En Couple,4,true,BMW,M5,507,tres longue,5,5,noir,false,94800,24-35,300-500,81500-105000
+9351 PY 84,25,M,619,En Couple,1,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,noir,false,49200,24-35,500-700,44500-63000
+8141 XJ 22,29,M,806,En Couple,0,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,gris,false,37100,24-35,700-900,26000-44500
+411 JC 54,38,F,894,En Couple,3,true,BMW,M5,507,tres longue,5,5,noir,false,94800,35-45,700-900,81500-105000
+3149 YY 88,38,M,530,En Couple,1,false,BMW,M5,507,tres longue,5,5,bleu,true,66360,35-45,500-700,63000-81500
+9081 EC 75,38,M,908,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,noir,false,18310,35-45,900-1300,7500-26000
+520 VV 96,24,F,506,En Couple,0,false,Volvo,S80 T6,272,tres longue,5,5,rouge,false,50500,24-35,500-700,44500-63000
+3284 FP 27,41,M,496,Celibataire,0,false,Kia,Picanto 1.1,65,courte,5,5,noir,false,8990,35-45,300-500,7500-26000
+9330 VJ 89,28,F,682,Celibataire,0,false,Renault,Megane 2.0 16V,135,moyenne,5,5,rouge,false,22350,24-35,500-700,7500-26000
+8268 PM 46,39,F,632,En Couple,1,false,Renault,Laguna 2.0T,170,longue,5,5,noir,false,27300,35-45,500-700,26000-44500
+8572 FE 29,58,M,641,En Couple,0,false,Saab,9.3 1.8T,150,longue,5,5,noir,true,27020,45-60,500-700,26000-44500
+8832 LI 68,38,M,204,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,rouge,false,18310,35-45,150-300,7500-26000
+811 ZC 22,45,M,970,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,rouge,false,18310,45-60,900-1300,7500-26000
+1354 BH 32,43,M,632,Celibataire,0,false,Volkswagen,Polo 1.2 6V,55,courte,5,3,blanc,false,12200,35-45,500-700,7500-26000
+1865 LP 83,51,M,714,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,blanc,false,18310,45-60,700-900,7500-26000
+2556 AE 78,38,M,916,En Couple,0,false,BMW,M5,507,tres longue,5,5,bleu,false,94800,35-45,900-1300,81500-105000
+8796 CF 72,43,F,523,En Couple,2,false,Fiat,Croma 2.2,147,longue,5,5,bleu,false,24780,35-45,500-700,7500-26000
+2315 GR 55,38,F,832,Seul(e),1,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,rouge,false,37100,35-45,700-900,26000-44500
+8762 PX 52,34,M,609,Celibataire,0,false,BMW,120i,150,moyenne,5,5,blanc,true,25060,24-35,500-700,7500-26000
+9868 NY 33,38,M,231,Seul(e),3,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,rouge,false,37100,35-45,150-300,26000-44500
+2097 OB 76,63,M,437,En Couple,3,false,Nissan,Maxima 3.0 V6,200,tres longue,5,5,bleu,false,30000,60-85,300-500,26000-44500
+630 AL 46,38,M,521,En Couple,2,false,Fiat,Croma 2.2,147,longue,5,5,rouge,false,24780,35-45,500-700,7500-26000
+5327 HX 32,18,F,305,En Couple,0,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,rouge,false,37100,18-24,300-500,26000-44500
+4865 QV 96,33,M,587,En Couple,3,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,rouge,false,49200,24-35,500-700,44500-63000
+4017 KF 90,39,M,605,En Couple,4,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,noir,false,49200,35-45,500-700,44500-63000
+2143 ZZ 36,38,F,618,En Couple,4,false,Volvo,S80 T6,272,tres longue,5,5,rouge,false,50500,35-45,500-700,44500-63000
+1586 QD 75,38,M,567,En Couple,2,false,Fiat,Croma 2.2,147,longue,5,5,gris,false,24780,35-45,500-700,7500-26000
+5306 VC 72,61,M,462,En Couple,0,false,Fiat,Croma 2.2,147,longue,5,5,noir,true,17346,60-85,300-500,7500-26000
+1158 ZP 61,38,M,537,En Couple,3,false,BMW,M5,507,tres longue,5,5,noir,true,66360,35-45,500-700,63000-81500
+9398 NF 19,38,M,512,En Couple,2,false,Volvo,S80 T6,272,tres longue,5,5,blanc,false,50500,35-45,500-700,44500-63000
+3928 IU 33,38,M,279,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,bleu,false,18310,35-45,150-300,7500-26000
+3255 YZ 73,20,M,377,Celibataire,0,false,Audi,A2 1.4,75,courte,5,5,bleu,false,18310,18-24,300-500,7500-26000
+32 CP 33,49,M,681,En Couple,2,false,Saab,9.3 1.8T,150,longue,5,5,bleu,true,27020,45-60,500-700,26000-44500
+2673 QC 89,38,M,681,En Couple,0,false,Volvo,S80 T6,272,tres longue,5,5,gris,false,50500,35-45,500-700,44500-63000
+7648 CE 40,58,M,442,En Couple,3,true,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,blanc,true,34440,45-60,300-500,26000-44500
+8777 NW 97,52,M,635,Celibataire,0,false,Mercedes,A200,136,moyenne,5,5,gris,true,18130,45-60,500-700,7500-26000
+1243 OT 96,38,M,588,Celibataire,0,false,Peugeot,1007 1.4,75,courte,5,5,rouge,false,13750,35-45,500-700,7500-26000
+681 QT 87,35,M,192,En Couple,0,true,Audi,A2 1.4,75,courte,5,5,blanc,false,18310,35-45,150-300,7500-26000
+509 VB 96,27,M,587,Marie(e),3,false,Volvo,S80 T6,272,tres longue,5,5,blanc,false,50500,24-35,500-700,44500-63000
+1859 QV 65,68,M,565,En Couple,1,true,Audi,A2 1.4,75,courte,5,5,bleu,true,12817,60-85,500-700,7500-26000
+3703 CL 42,18,M,616,Celibataire,0,false,Renault,Megane 2.0 16V,135,moyenne,5,5,rouge,false,22350,18-24,500-700,7500-26000
+7536 JE 15,67,M,907,Seul(e),2,false,Saab,9.3 1.8T,150,longue,5,5,rouge,false,38600,60-85,900-1300,26000-44500
+5943 ZC 71,36,M,843,En Couple,4,true,BMW,M5,507,tres longue,5,5,noir,false,94800,35-45,700-900,81500-105000
+7119 FT 38,38,F,622,En Couple,3,false,BMW,M5,507,tres longue,5,5,gris,true,66360,35-45,500-700,63000-81500
+6401 XN 54,38,M,486,Celibataire,0,false,Daihatsu,Cuore 1.0,58,courte,5,3,gris,false,8850,35-45,300-500,7500-26000
+7935 KD 23,42,M,431,En Couple,0,false,Seat,Toledo 1.6,102,longue,5,5,bleu,false,18880,35-45,300-500,7500-26000
+2809 CN 46,27,M,351,En Couple,1,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,blanc,false,37100,24-35,300-500,26000-44500
+9220 AI 73,38,M,630,En Couple,0,false,Volvo,S80 T6,272,tres longue,5,5,rouge,false,50500,35-45,500-700,44500-63000
+1388 AY 62,56,M,448,En Couple,2,true,Volkswagen,Polo 1.2 6V,55,courte,5,3,rouge,true,8540,45-60,300-500,7500-26000
+3102 AS 55,39,F,471,En Couple,3,false,Skoda,Superb 2.8 V6,193,tres longue,5,5,noir,false,31790,35-45,300-500,26000-44500
+5601 GN 35,46,M,605,Celibataire,0,false,Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,gris,false,22900,45-60,500-700,7500-26000
+9212 YG 59,37,F,624,En Couple,2,false,Renault,Laguna 2.0T,170,longue,5,5,rouge,false,27300,35-45,500-700,26000-44500
+5521 EU 97,38,M,603,En Couple,2,false,BMW,M5,507,tres longue,5,5,blanc,true,66360,35-45,500-700,63000-81500
+128 MF 41,38,M,303,En Couple,1,false,BMW,M5,507,tres longue,5,5,rouge,false,94800,35-45,300-500,81500-105000
+3009 WQ 79,43,F,661,En Couple,0,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,noir,false,49200,35-45,500-700,44500-63000
+9875 YI 81,38,M,480,En Couple,0,false,Nissan,Primera 1.6,109,longue,5,5,gris,false,18650,35-45,300-500,7500-26000
+7270 ZG 86,38,M,695,En Couple,3,false,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,bleu,false,49200,35-45,500-700,44500-63000
+1718 JE 96,38,F,701,En Couple,4,true,Renault,Vel Satis 3.5 V6,245,tres longue,5,5,rouge,false,49200,35-45,700-900,44500-63000
+8814 SA 21,31,M,438,Seul(e),2,false,Nissan,Primera 1.6,109,longue,5,5,noir,false,18650,24-35,300-500,7500-26000
+9121 EC 13,38,M,515,En Couple,1,false,Volvo,S80 T6,272,tres longue,5,5,bleu,false,50500,35-45,500-700,44500-63000
+7739 AJ 38,34,M,508,Celibataire,0,false,Renault,Megane 2.0 16V,135,moyenne,5,5,gris,false,22350,24-35,500-700,7500-26000
+7389 IY 96,27,M,664,En Couple,0,false,Ford,Mondeo 1.8,125,longue,5,5,rouge,false,23900,24-35,500-700,7500-26000
+7665 YD 29,38,F,358,Seul(e),2,false,Jaguar,X-Type 2.5 V6,197,longue,5,5,noir,false,37100,35-45,300-500,26000-44500
