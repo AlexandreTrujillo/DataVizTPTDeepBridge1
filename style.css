@@ -1,0 +1,67 @@
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#titre_principal
+{
+	margin-left: 15px;
+	font-family: "Calibri";
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 32px;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+.tooltip
+{
+	position: absolute;
+    font-size: 12px;
+    width:  auto;
+    height: auto;
+    pointer-events: none;
+    background-color: white;
+	border:solid;				    
+	border-width:1px;				    
+	border-radius:5px;				    
+	padding:10px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: black;
+    padding-bottom: 3px;
+    text-decoration: none;
+    font-family: "Calibri";
+}
+
+nav a:hover
+{
+    border-bottom: 2px solid black;
+}
+
+section
+{
+	font-size: large;
+	margin-left: 150px;
+	margin-right: 150px;
+	padding: 5px;
+}
+
+p
+{
+	font-size: large;
+	text-align: justify;
+	font-family: "Calibri";
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Data visualisation du groupe Deep Bridge 1</title>
+    </head>
+
+    <header>
+    	<div id="titre_principal">
+            <h1>Data visualisation du groupe Deep Bridge 1</h1>
+        </div>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="accueil.html">ACCUEIL</a></li>
+	    	<li><a href="histogrammes.html">HISTOGRAMMES</a></li>
+	    	<li><a href="parallelCoordinates.html">PARALLEL COORDINATES</a></li>
+	    	<li><a href="scatterPlot.html">SCATTER PLOT</a></li>
+	    	<li><a href="2dDensityMap.html">2D DENSITY MAP</a></li>
+	    	<li><a href="parallelSet.html">PARALLEL SETS</a></li>
+	    </ul>
+	</nav>
+
+    <body>
+    	<section>
+    		<p>La visualisation ci-dessous représente les taux de ventes des différents modèles de voitures. On voudrait détecter les marques les plus vendues. Pour cela on choisit un Histogramme prenant les différentes marques en dimension, et la fréquence d’apparition dans le jeu de données en mesure. Autrement dit la fréquence d’achat en mesure.</p>
+
+			<p>On voudrait également avoir une idée des ventes des différents modèles pour chaque marque. Pour cela on trace un Histogramme des différents modèles de la base de données, interactif avec la première visualisation. En sélectionnant une marque particulière, on peut voir s’afficher seulement les modèles concernés. Et inversement, en sélectionnant un modèle, seule sa marque s'affiche.</p>
+	    	<div id="carType"></div>
+			<div id="carModelType"></div>
+
+
+			<script src="crossfilter.js"></script>
+			<script src="d3.js"></script>
+			<script src="dc.js"></script>
+			<script>
+
+			    var carTypeChart = dc.rowChart("#carType");
+			    var carModelTypeChart = dc.rowChart("#carModelType");
+
+			    d3.csv("https://raw.githubusercontent.com/AlexandreTrujillo/DataVizTPTDeepBridge1/master/small_data_cleaned.csv", function(error, data) {
+			        if (error) throw error;
+
+			        var ndx= crossfilter(data);
+			        var allData= ndx.groupAll();
+			        var carType = ndx.dimension(function (d){ return d["marque"];})
+			        var carModelType = ndx.dimension(function (d){ return d["nom"];})
+			        var carTypeGroup = carType.group();
+			        var carModelTypeGroup = carModelType.group();
+
+			        carTypeChart
+			            .width(1000)
+			            .height(500)
+			        .dimension(carType)
+			        .group(carTypeGroup)
+			        .elasticX(true);
+
+			        carModelTypeChart
+			            .width(1000)
+			            .height(500)
+			            .dimension(carModelType)
+			            .group(carModelTypeGroup)
+			            .elasticX(true);
+
+			        dc.renderAll();
+
+			    });
+
+			</script>
+	    </section>
+	</body>
+</html>
