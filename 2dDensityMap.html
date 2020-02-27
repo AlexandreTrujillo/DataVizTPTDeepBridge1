@@ -32,8 +32,80 @@
 			<p>Une 2D Density Map permet de visualiser la distribution jointe de deux variables quantitatives. Le nombre d’observations dans une zone précise du plan est compté et ensuite représenté par des contours. Plus il y a de contours, plus la zone est dense, et donc plus il y a d’observations dans cette région.</p>
 
 			<p>En passant la souris sur une ligne, une pop-up affiche la densité de la zone.</p>
+
+			<form>
+			<h4>Tranche d'age :</h4>
+			<div>
+				<input type="radio" id="noFilterAge" name="tranche_age" value="null" checked>
+				<label for="null">Pas de filtre</label>
+
+				<input type="radio" id="18-24" name="tranche_age" value="18-24">
+				<label for="18-24">18-24</label>
+
+				<input type="radio" id="24-35" name="tranche_age" value="24-35">
+				<label for="24-35">24-35</label>
+
+				<input type="radio" id="35-45" name="tranche_age" value="35-45">
+				<label for="35-45">35-45</label>
+
+				<input type="radio" id="45-60" name="tranche_age" value="45-60">
+				<label for="45-60">45-60</label>
+
+				<input type="radio" id="60-85" name="tranche_age" value="60-85">
+				<label for="60-85">60-85</label>
+			</div>
+			<br/>
+			<button type="submit">Appliquer les filtres</button>
+		</form>
+		<br/>
+
 	    	<div id="my_dataviz"></div>
 			<script>
+
+			var filters = {};
+
+			var originalData;
+			var filtredData;
+			var form = document.querySelector("form");
+
+			form.addEventListener("submit", function (event) {
+				var filtersDatas = new FormData(form);
+
+				for (const entry of filtersDatas) {
+					if (entry[1] != "null") {
+						filters[entry[0]] = entry[1];
+					} else {
+						delete filters[entry[0]];
+					}
+				};
+				applyFilters();
+				document.getElementById("my_dataviz").innerHTML = "";
+				drawVisualisation();
+				event.preventDefault();
+
+			}, false);
+
+
+			// Filter the data
+			function filterData(dataToFilter) {
+				var newData = dataToFilter.filter(function (item) {
+					for (var key in filters) {
+						if (item[key] === undefined || item[key] != filters[key]) {
+							return false;
+						}
+					}
+					return true;
+				});
+				return newData;
+			}
+
+			function applyFilters() {
+				filtredData = filterData(originalData);
+			}
+
+			drawVisualisation();
+
+			function drawVisualisation() {
 				// set the dimensions and margins of the graph
 				var margin = {top: 20, right: 30, bottom: 30, left: 50},
 				    width = 960 - margin.left - margin.right,
@@ -50,6 +122,14 @@
 
 				// read data
 				d3.csv("https://raw.githubusercontent.com/AlexandreTrujillo/DataVizTPTDeepBridge1/master/small_data_cleaned.csv", function(data) {
+
+					if (originalData == null) {
+						originalData = filterData(data);
+					}
+
+					if (filtredData == null) {
+						filtredData = originalData;
+					}
 
 
 				  var tooltip = d3.select("#my_dataviz")
@@ -82,7 +162,7 @@
 
 				  // Add X axis
 				  var x = d3.scaleLinear()
-				    .domain(d3.extent(data, function(d) { return +d["taux"]; }))
+				    .domain(d3.extent(filtredData, function(d) { return +d["taux"]; }))
 				    .range([ 0, width ]);
 				  svg.append("g")
 				    .attr("transform", "translate(0," + height + ")")
@@ -90,20 +170,18 @@
 
 				  // Add Y axis
 				  var y = d3.scaleLinear()
-				    .domain(d3.extent(data, function(d) { return +d["prix"]; }))
+				    .domain(d3.extent(filtredData, function(d) { return +d["prix"]; }))
 				    .range([ height, 0 ]);
 				  svg.append("g")
 				    .call(d3.axisLeft(y));
 
-
-				  
 				  // compute the density data
 				  var densityData = d3.contourDensity()
 				    .x(function(d) { return x(d.taux); })   // x and y = column name in .csv input data
 				    .y(function(d) { return y(d.prix); })
 				    .size([width, height])
 				    .bandwidth(15)    // smaller = more precision in lines = more lines
-				    (data)
+				    (filtredData)
 
 				  // Add the contour: several "path"
 				  svg
@@ -119,7 +197,9 @@
 				      .on("mousemove", mousemove)
 				      .on("mouseleave", mouseleave)
 				})
-				</script>
+
+			}
+			</script>
 	    </section>
 	</body>
 </html>

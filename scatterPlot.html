@@ -1,179 +1,295 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
-        <script src="http://d3js.org/d3.v4.min.js"></script>
-        <title>Data visualisation du groupe Deep Bridge 1</title>
-        <style>
-			.axis path,
-			.axis line {
-			  fill: none;
-			  stroke: #000;
-			  shape-rendering: crispEdges;
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" />
+	<script src="http://d3js.org/d3.v4.min.js"></script>
+	<title>Data visualisation du groupe Deep Bridge 1</title>
+	<style>
+		.axis path,
+		.axis line {
+			fill: none;
+			stroke: #000;
+			shape-rendering: crispEdges;
+		}
+	</style>
+</head>
+
+<header>
+	<div id="titre_principal">
+		<h1>Data visualisation du groupe Deep Bridge 1</h1>
+	</div>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="accueil.html">ACCUEIL</a></li>
+		<li><a href="histogrammes.html">HISTOGRAMMES</a></li>
+		<li><a href="parallelCoordinates.html">PARALLEL COORDINATES</a></li>
+		<li><a href="scatterPlot.html">SCATTER PLOT</a></li>
+		<li><a href="2dDensityMap.html">2D DENSITY MAP</a></li>
+		<li><a href="parallelSet.html">PARALLEL SETS</a></li>
+	</ul>
+</nav>
+
+<body>
+	<section>
+
+		<p>On veut observer s’il y a une corrélation entre la puissance d’un véhicule et son prix, mais on va également
+			voir si celui-ci varie selon s’il s’agit d’un véhicule neuf ou d’occasion. On réalise pour cela un Scatter
+			Plot, en plaçant les véhicules en fonction du prix en abscisses et de la puissance en ordonnées. On
+			distingue les voitures d’occasion des voitures neuves en les représentant de deux couleurs différentes.</p>
+
+		<p>En passant la souris sur un point, une pop-up affiche la puissance, le prix de la voiture concernée, et s’il
+			s’agit d’une occasion ou non.</p>
+
+		<form>
+			<h4>Tranche d'age :</h4>
+			<div>
+				<input type="radio" id="noFilterAge" name="tranche_age" value="null" checked>
+				<label for="null">Pas de filtre</label>
+
+				<input type="radio" id="18-24" name="tranche_age" value="18-24">
+				<label for="18-24">18-24</label>
+
+				<input type="radio" id="24-35" name="tranche_age" value="24-35">
+				<label for="24-35">24-35</label>
+
+				<input type="radio" id="35-45" name="tranche_age" value="35-45">
+				<label for="35-45">35-45</label>
+
+				<input type="radio" id="45-60" name="tranche_age" value="45-60">
+				<label for="45-60">45-60</label>
+
+				<input type="radio" id="60-85" name="tranche_age" value="60-85">
+				<label for="60-85">60-85</label>
+			</div>
+
+			<h4>Sexe :</h4>
+			<div>
+				<input type="radio" id="noFilterSexe" name="sexe" value="null" checked>
+				<label for="null">Pas de filtre</label>
+
+				<input type="radio" id="M" name="sexe" value="M">
+				<label for="M">M</label>
+
+				<input type="radio" id="F" name="sexe" value="F">
+				<label for="F">F</label>
+			</div>
+
+			<h4>Situation Familiale :</h4>
+			<div>
+				<input type="radio" id="noFilterSituationFamiliale" name="situationFamiliale" value="null" checked>
+				<label for="null">Pas de filtre</label>
+
+				<input type="radio" id="enCouple" name="situationFamiliale" value="En Couple">
+				<label for="En Couple">En Couple</label>
+
+				<input type="radio" id="Celibataire" name="situationFamiliale" value="Celibataire">
+				<label for="Celibataire">Celibataire</label>
+
+				<input type="radio" id="Seul" name="situationFamiliale" value="Seul(e)">
+				<label for="Seul(e)">Seul(e)</label>
+			</div>
+			<br/>
+			<button type="submit">Appliquer les filtres</button>
+		</form>
+		<br/>
+		
+		<div id="chartScatterPlot"></div>
+		<script>
+
+			var filters = {};
+
+			var originalData;
+			var filtredData;
+			var form = document.querySelector("form");
+
+			form.addEventListener("submit", function (event) {
+				var filtersDatas = new FormData(form);
+
+				for (const entry of filtersDatas) {
+					if (entry[1] != "null") {
+						filters[entry[0]] = entry[1];
+					} else {
+						delete filters[entry[0]];
+					}
+				};
+				applyFilters();
+				document.getElementById("chartScatterPlot").innerHTML = "";
+				drawVisualisation();
+				event.preventDefault();
+
+			}, false);
+
+
+			// Filter the data
+			function filterData(dataToFilter) {
+				var newData = dataToFilter.filter(function (item) {
+					for (var key in filters) {
+						if (item[key] === undefined || item[key] != filters[key]) {
+							return false;
+						}
+					}
+					return true;
+				});
+				return newData;
 			}
-		</style>
-    </head>
 
-    <header>
-    	<div id="titre_principal">
-            <h1>Data visualisation du groupe Deep Bridge 1</h1>
-        </div>
-	</header>
+			function applyFilters() {
+				filtredData = filterData(originalData);
+			}
 
-	<nav>
-		<ul>
-			<li><a href="accueil.html">ACCUEIL</a></li>
-	    	<li><a href="histogrammes.html">HISTOGRAMMES</a></li>
-	    	<li><a href="parallelCoordinates.html">PARALLEL COORDINATES</a></li>
-	    	<li><a href="scatterPlot.html">SCATTER PLOT</a></li>
-	    	<li><a href="2dDensityMap.html">2D DENSITY MAP</a></li>
-	    	<li><a href="parallelSet.html">PARALLEL SETS</a></li>
-	    </ul>
-	</nav>
+			drawVisualisation();
 
-    <body>
-    	<section>
-	    	<p>On veut observer s’il y a une corrélation entre la puissance d’un véhicule et son prix, mais on va également voir si celui-ci varie selon s’il s’agit d’un véhicule neuf ou d’occasion. On réalise pour cela un Scatter Plot, en plaçant les véhicules en fonction du prix en abscisses et de la puissance en ordonnées. On distingue les voitures d’occasion des voitures neuves en les représentant de deux couleurs différentes.</p>
+			function drawVisualisation() {
 
-	    	<p>En passant la souris sur un point, une pop-up affiche la puissance, le prix de la voiture concernée, et s’il s’agit d’une occasion ou non.</p>
-	        <div id="chartScatterPlot" />
-	    	<script>
+
 
 				url = 'https://raw.githubusercontent.com/AlexandreTrujillo/DataVizTPTDeepBridge1/master/small_data_cleaned.csv';
 
-				var margin = {top: 20, right: 20, bottom: 30, left: 40},
-				    width = 960 - margin.left - margin.right,
-				    height = 500 - margin.top - margin.bottom;
+				var margin = { top: 20, right: 20, bottom: 30, left: 40 },
+					width = 960 - margin.left - margin.right,
+					height = 500 - margin.top - margin.bottom;
 
 				var x = d3.scaleLinear()
-    					  .range([0, width]);
-    			var xAxis = d3.axisBottom(x);
+					.range([0, width]);
+				var xAxis = d3.axisBottom(x);
 
 				var y = d3.scaleLinear()
-    					  .range([height, 0]);
-    			var yAxis = d3.axisLeft(y);
+					.range([height, 0]);
+				var yAxis = d3.axisLeft(y);
 
 				var color = d3.scaleOrdinal()
-							  .domain(["true", "false"])
-							  .range(["#440154FF", "#FDE725FF"]);
+					.domain(["true", "false"])
+					.range(["#440154FF", "#FDE725FF"]);
 
 				// On ajoute au graphe un canvas qui contiendra notre visualisation
 				var svg = d3.select("#chartScatterPlot").append("svg")
-						     .attr("width", width + margin.left + margin.right)
-						     .attr("height", height + margin.top + margin.bottom)
-						    .append("g")
-						     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+					.attr("width", width + margin.left + margin.right)
+					.attr("height", height + margin.top + margin.bottom)
+					.append("g")
+					.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 				// Chargement de notre csv
-				d3.csv(url, function(error, data) {
+				d3.csv(url, function (error, data) {
 					if (error) throw error;
 
-				    // On convertit les string des colonnes qui nous sont utiles en entiers
-				    data.forEach(function(d) {
-				    	d.prix = +d.prix;
-				    	d.puissance = +d.puissance;
-				    });
+					if (originalData == null) {
+						originalData = filterData(data);
+					}
 
-				    // Afin d'éviter que les points soient sur les axes et les cachent, on étend nos axes
-				    x.domain(d3.extent(data, function(d) { return d.prix; })).nice();
-  					y.domain(d3.extent(data, function(d) { return d.puissance; })).nice();
+					if (filtredData == null) {
+						filtredData = originalData;
+					}
 
-				    // On place notre axe x
-				    svg.append("g")
-				        .attr("class", "x axis")
-				        .attr("transform", "translate(0," + height + ")")
-				        .call(xAxis)
-				       .append("text")
-				        .attr("class", "label")
-				        .attr("x", width)
-				        .attr("y", -6)
-				        .style("text-anchor", "end")
-				        .text("Prix");
+					// On convertit les string des colonnes qui nous sont utiles en entiers
+					filtredData.forEach(function (d) {
+						d.prix = +d.prix;
+						d.puissance = +d.puissance;
+					});
 
-				    // Puis l'axe y
-				    svg.append("g")
-				        .attr("class", "y axis")
-				        .call(yAxis)
-				       .append("text")
-				        .attr("class", "label")
-				        .attr("transform", "rotate(-90)")
-				        .attr("y", 6)
-				        .attr("dy", ".71em")
-				        .style("text-anchor", "end")
-				        .text("Puissance")
+					// Afin d'éviter que les points soient sur les axes et les cachent, on étend nos axes
+					x.domain(d3.extent(filtredData, function (d) { return d.prix; })).nice();
+					y.domain(d3.extent(filtredData, function (d) { return d.puissance; })).nice();
 
-				      // Add a tooltip div. Here I define the general feature of the tooltip: stuff that do not depend on the data point.
-					  // Its opacity is set to 0: we don't see it by default.
-					  var tooltip = d3.select("#chartScatterPlot")
-					    .append("div")
-					    .style("opacity", 0)
-					    .attr("class", "tooltip")
+					// On place notre axe x
+					svg.append("g")
+						.attr("class", "x axis")
+						.attr("transform", "translate(0," + height + ")")
+						.call(xAxis)
+						.append("text")
+						.attr("class", "label")
+						.attr("x", width)
+						.attr("y", -6)
+						.style("text-anchor", "end")
+						.text("Prix");
 
-					  // A function that change this tooltip when the user hover a point.
-					  // Its opacity is set to 1: we can now see it. Plus it set the text and position of tooltip depending on the datapoint (d)
-					  var mouseover = function(d) {
-					    tooltip
-					      .style("opacity", 1)
-					  }
+					// Puis l'axe y
+					svg.append("g")
+						.attr("class", "y axis")
+						.call(yAxis)
+						.append("text")
+						.attr("class", "label")
+						.attr("transform", "rotate(-90)")
+						.attr("y", 6)
+						.attr("dy", ".71em")
+						.style("text-anchor", "end")
+						.text("Puissance")
 
-					  var mousemove = function(d) {
-					    tooltip
-					      .html("Prix exact : " + d.prix + "€<br>Puissance exacte : " + d.puissance + "ch<br>Occasion : " + d.occasion)
-					      .style("left", (d3.event.pageX + 15) + "px")
-					      .style("top", (d3.event.pageY - 28) + "px")
-					      .transition()
-					      .duration(200) 
-					      .style("opacity", .9)
-					  }
+					// Add a tooltip div. Here I define the general feature of the tooltip: stuff that do not depend on the data point.
+					// Its opacity is set to 0: we don't see it by default.
+					var tooltip = d3.select("#chartScatterPlot")
+						.append("div")
+						.style("opacity", 0)
+						.attr("class", "tooltip")
 
-					  // A function that change this tooltip when the leaves a point: just need to set opacity to 0 again
-					  var mouseleave = function(d) {
-					    tooltip
-					      .transition()
-					      .duration(200)
-					      .style("opacity", 0)
-					  }
+					// A function that change this tooltip when the user hover a point.
+					// Its opacity is set to 1: we can now see it. Plus it set the text and position of tooltip depending on the datapoint (d)
+					var mouseover = function (d) {
+						tooltip
+							.style("opacity", 1)
+					}
 
-				    // On dessine chacun des points
-				    svg.selectAll(".dot")
-				        .data(data)
-				       .enter().append("circle")
-				        .attr("class", "dot")
-				        .attr("r", 7)
-				        .attr("cx", function(d) { return x(d.prix); })
-				        .attr("cy", function(d) { return y(d.puissance); })
-				        .style("fill", function(d) { return color(d.occasion); })
-				        .style("opacity", 0.3)
-				        .on("mouseover", mouseover )
-					    .on("mousemove", mousemove )
-					    .on("mouseleave", mouseleave );
+					var mousemove = function (d) {
+						tooltip
+							.html("Modèle : " + d.marque + " " + d.nom + "<br>Prix exact : " + d.prix + "€<br>Puissance exacte : " + d.puissance + "ch<br>Occasion : " + d.occasion)
+							.style("left", (d3.event.pageX + 15) + "px")
+							.style("top", (d3.event.pageY - 28) + "px")
+							.transition()
+							.duration(200)
+							.style("opacity", .9)
+					}
 
-				    // On créé la légende
-				    var legend = svg.selectAll(".legend")
-				        			 .data(color.domain())
-				    				.enter().append("g")
-				        			 .attr("class", "legend")
-				        			 .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+					// A function that change this tooltip when the leaves a point: just need to set opacity to 0 again
+					var mouseleave = function (d) {
+						tooltip
+							.transition()
+							.duration(200)
+							.style("opacity", 0)
+					}
 
-				    // On ajoute dans la légende les carrés de couleurs
-				    legend.append("rect")
-				           .attr("x", width - 18)
-				           .attr("width", 18)
-				           .attr("height", 18)
-				           .style("fill", color);
+					// On dessine chacun des points
+					svg.selectAll(".dot")
+						.data(filtredData)
+						.enter().append("circle")
+						.attr("class", "dot")
+						.attr("r", 7)
+						.attr("cx", function (d) { return x(d.prix); })
+						.attr("cy", function (d) { return y(d.puissance); })
+						.style("fill", function (d) { return color(d.occasion); })
+						.style("opacity", 0.3)
+						.on("mouseover", mouseover)
+						.on("mousemove", mousemove)
+						.on("mouseleave", mouseleave);
 
-				    // On ajoute le texte référençant les couleurs
-				    legend.append("text")
-				       	   .attr("x", width - 24)
-				           .attr("y", 9)
-				           .attr("dy", ".35em")
-				           .style("text-anchor", "end")
-				           .text(function(d) { return d; });
+					// On créé la légende
+					var legend = svg.selectAll(".legend")
+						.data(color.domain())
+						.enter().append("g")
+						.attr("class", "legend")
+						.attr("transform", function (d, i) { return "translate(0," + i * 20 + ")"; });
+
+					// On ajoute dans la légende les carrés de couleurs
+					legend.append("rect")
+						.attr("x", width - 18)
+						.attr("width", 18)
+						.attr("height", 18)
+						.style("fill", color);
+
+					// On ajoute le texte référençant les couleurs
+					legend.append("text")
+						.attr("x", width - 24)
+						.attr("y", 9)
+						.attr("dy", ".35em")
+						.style("text-anchor", "end")
+						.text(function (d) { return d; });
 
 				});
+			}
+		</script>
+	</section>
+</body>
 
-			</script>
-		</section>
-	</body>
 </html>

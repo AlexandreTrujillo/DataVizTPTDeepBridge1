@@ -1,154 +1,279 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
-        <script src="http://d3js.org/d3.v4.min.js"></script>
-        <title>Data visualisation du groupe Deep Bridge 1</title>
-    </head>
 
-    <header>
-    	<div id="titre_principal">
-            <h1>Data visualisation du groupe Deep Bridge 1</h1>
-        </div>
-	</header>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" />
+	<script src="http://d3js.org/d3.v4.min.js"></script>
+	<title>Data visualisation du groupe Deep Bridge 1</title>
+</head>
 
-	<nav>
-		<ul>
-			<li><a href="accueil.html">ACCUEIL</a></li>
-	    	<li><a href="histogrammes.html">HISTOGRAMMES</a></li>
-	    	<li><a href="parallelCoordinates.html">PARALLEL COORDINATES</a></li>
-	    	<li><a href="scatterPlot.html">SCATTER PLOT</a></li>
-	    	<li><a href="2dDensityMap.html">2D DENSITY MAP</a></li>
-	    	<li><a href="parallelSet.html">PARALLEL SETS</a></li>
-	    </ul>
-	</nav>
+<header>
+	<div id="titre_principal">
+		<h1>Data visualisation du groupe Deep Bridge 1</h1>
+	</div>
+</header>
 
-    <body>
-    	<section>
-	    	<p>On va ensuite entrer dans un contexte plus précis, et analyser les différents liens entre les attributs d’un véhicule, plus précisément on voudrait voir s’il y a des différences notables de prix d’une marque à l’autre, ou encore s’il y a un lien entre la puissance d’un véhicule et son prix. On choisit de faire un Parallel Coordinates qui prendrait comme dimensions les marques des véhicules, leur prix, et leur puissance.</p>
-			
-			<p>En passant la souris sur une ligne, une pop-up s'affiche et indique la marque, la puissance et le prix de la voiture concernée.</p>
-	    	<div id="my_dataviz"></div>
-	    	<script>
+<nav>
+	<ul>
+		<li><a href="accueil.html">ACCUEIL</a></li>
+		<li><a href="histogrammes.html">HISTOGRAMMES</a></li>
+		<li><a href="parallelCoordinates.html">PARALLEL COORDINATES</a></li>
+		<li><a href="scatterPlot.html">SCATTER PLOT</a></li>
+		<li><a href="2dDensityMap.html">2D DENSITY MAP</a></li>
+		<li><a href="parallelSet.html">PARALLEL SETS</a></li>
+	</ul>
+</nav>
+
+<body>
+	<section>
+
+		<p>On va ensuite entrer dans un contexte plus précis, et analyser les différents liens entre les attributs d’un
+			véhicule, plus précisément on voudrait voir s’il y a des différences notables de prix d’une marque à
+			l’autre, ou encore s’il y a un lien entre la puissance d’un véhicule et son prix. On voudrait également détecter des liens entre le prix d’un véhicule et l’âge d’un client, ou encore son revenu.</p>
+
+		<p>On choisit de faire un Parallel Coordinates qui prendrait comme dimensions les marques des véhicules, leur prix, et leur puissance.</p>
+
+		<p>En passant la souris sur une ligne, une pop-up s'affiche et indique la marque, la puissance et le prix de la
+			voiture concernée.</p>
+
+		<form>
+			<h4>Tranche d'age :</h4>
+			<div>
+				<input type="radio" id="noFilterAge" name="tranche_age" value="null" checked>
+				<label for="null">Pas de filtre</label>
+
+				<input type="radio" id="18-24" name="tranche_age" value="18-24">
+				<label for="18-24">18-24</label>
+
+				<input type="radio" id="24-35" name="tranche_age" value="24-35">
+				<label for="24-35">24-35</label>
+
+				<input type="radio" id="35-45" name="tranche_age" value="35-45">
+				<label for="35-45">35-45</label>
+
+				<input type="radio" id="45-60" name="tranche_age" value="45-60">
+				<label for="45-60">45-60</label>
+
+				<input type="radio" id="60-85" name="tranche_age" value="60-85">
+				<label for="60-85">60-85</label>
+			</div>
+
+			<h4>Sexe :</h4>
+			<div>
+				<input type="radio" id="noFilterSexe" name="sexe" value="null" checked>
+				<label for="null">Pas de filtre</label>
+
+				<input type="radio" id="M" name="sexe" value="M">
+				<label for="M">M</label>
+
+				<input type="radio" id="F" name="sexe" value="F">
+				<label for="F">F</label>
+			</div>
+
+			<h4>Situation Familiale :</h4>
+			<div>
+				<input type="radio" id="noFilterSituationFamiliale" name="situationFamiliale" value="null" checked>
+				<label for="null">Pas de filtre</label>
+
+				<input type="radio" id="enCouple" name="situationFamiliale" value="En Couple">
+				<label for="En Couple">En Couple</label>
+
+				<input type="radio" id="Celibataire" name="situationFamiliale" value="Celibataire">
+				<label for="Celibataire">Celibataire</label>
+
+				<input type="radio" id="Seul" name="situationFamiliale" value="Seul(e)">
+				<label for="Seul(e)">Seul(e)</label>
+			</div>
+			<br/>
+			<button type="submit">Appliquer les filtres</button>
+		</form>
+		<br/>
+		
+		<div id="my_dataviz"></div>
+		<script>
+
+			var filters = {};
+
+			var originalData;
+			var filtredData;
+			var form = document.querySelector("form");
+
+			form.addEventListener("submit", function (event) {
+				var filtersDatas = new FormData(form);
+
+				for (const entry of filtersDatas) {
+					if (entry[1] != "null") {
+						filters[entry[0]] = entry[1];
+					} else {
+						delete filters[entry[0]];
+					}
+				};
+				applyFilters();
+				document.getElementById("my_dataviz").innerHTML = "";
+				drawVisualisation();
+				event.preventDefault();
+
+			}, false);
+
+
+			// Filter the data
+			function filterData(dataToFilter) {
+				var newData = dataToFilter.filter(function (item) {
+					for (var key in filters) {
+						if (item[key] === undefined || item[key] != filters[key]) {
+							return false;
+						}
+					}
+					return true;
+				});
+				return newData;
+			}
+
+			function applyFilters() {
+				filtredData = filterData(originalData);
+			}
+
+			drawVisualisation();
+
+			function drawVisualisation() {
 
 				// set the dimensions and margins of the graph
-				var margin = {top: 30, right: 50, bottom: 10, left: 50},
-				  width = 960 - margin.left - margin.right,
-				  height = 500 - margin.top - margin.bottom;
+				var margin = { top: 30, right: 50, bottom: 10, left: 50 },
+					width = 960 - margin.left - margin.right,
+					height = 500 - margin.top - margin.bottom;
 
 
 				// append the svg object to the body of the page
 				var svg = d3.select("#my_dataviz")
-				.append("svg")
-				  .attr("width", width + margin.left + margin.right)
-				  .attr("height", height + margin.top + margin.bottom)
-				.append("g")
-				  .attr("transform",
-				        "translate(" + margin.left + "," + margin.top + ")");
+					.append("svg")
+					.attr("width", width + margin.left + margin.right)
+					.attr("height", height + margin.top + margin.bottom)
+					.append("g")
+					.attr("transform",
+						"translate(" + margin.left + "," + margin.top + ")");
 
 				// Parse the Data
-				d3.csv("https://raw.githubusercontent.com/AlexandreTrujillo/DataVizTPTDeepBridge1/master/small_data_cleaned.csv", function(data) {
-				  
-				  var color = d3.scaleLinear()
-				    .domain( d3.extent(data, function(d) { return +d["prix"]; }))
-				  	.range(["yellow", "green"])
+				d3.csv("https://raw.githubusercontent.com/AlexandreTrujillo/DataVizTPTDeepBridge1/master/small_data_cleaned.csv", function (data) {
 
-				  var tooltip = d3.select("#my_dataviz")
-				    .append("div")
-				    .style("opacity", 0)
-				    .attr("class", "tooltip")
+					if (originalData == null) {
+						originalData = filterData(data);
+					}
 
-				  // Three function that change the tooltip when user hover / move / leave a cell
+					if (filtredData == null) {
+						filtredData = originalData;
+					}
 
-				   var mouseover = function(d) {
-				    tooltip.style("opacity", 1)
-				  }
-				  
-				  var mousemove = function(d) {
-				    tooltip
-				      .html("Marque : " + d.marque + "<br>Puissance : " + d.puissance + "ch<br>Prix : " + d.prix + "€")
-				      .style("left", (d3.event.pageX + 15) + "px")
-					  .style("top", (d3.event.pageY - 28) + "px")
-					  .transition()
-					  .duration(200) 
-					  .style("opacity", .9)
-				  }
-				  
-				  var mouseleave = function(d) {
-				    tooltip
-					      .transition()
-					      .duration(200)
-					      .style("opacity", 0)
-				  }
+					var color = d3.scaleLinear()
+								  	.range(["#FDE725", "#471164"])
+								    .domain(d3.extent(filtredData, function(d) { return +d["puissance"]; }))
 
-				    
-				 // Extract the list of dimensions we want to keep in the plot. Here I keep all except the column called Species
-				  dimensions = ["marque","puissance", "prix"]
+					var tooltip = d3.select("#my_dataviz")
+						.append("div")
+						.style("opacity", 0)
+						.attr("class", "tooltip")
 
-				  // For each dimension, I build a linear scale. I store all in a y object
-				  var y = {}
-				  
-				y["prix"] = d3.scaleLinear()
-				      .domain( d3.extent(data, function(d) { return +d["prix"]; }) )
-				      .range([height, 0])
-				      
-				y["puissance"] = d3.scaleLinear()
-				      .domain( d3.extent(data, function(d) { return +d["puissance"]; }) )
-				      .range([height, 0])
-				      
-				y["marque"] = d3.scaleBand()
-				      .domain(["Audi","BMW","Dacia","Daihatsu","Fiat","Ford","Jaguar","Kia","Lancia","Mercedes","Mini","Nissan","Peugeot","Renault","Saab","Seat","Skoda","Volkswagen","Volvo"])
-				      .range([height, 0])
+					// Three function that change the tooltip when user hover / move / leave a cell
+
+					var mouseover = function (d) {
+						tooltip.style("opacity", 1)
+					}
+
+					var mousemove = function (d) {
+						tooltip
+							.html("Marque : " + d.marque + "<br>Puissance : " + d.puissance + "ch<br>Prix : " + d.prix + "€<br>Âge : " + d.tranche_age + "<br>Revenu :" + d.tranche_taux +"€")
+							.style("left", (d3.event.pageX + 15) + "px")
+							.style("top", (d3.event.pageY - 28) + "px")
+							.transition()
+							.duration(200)
+							.style("opacity", .9)
+					}
+
+					var mouseleave = function (d) {
+						tooltip
+							.transition()
+							.duration(200)
+							.style("opacity", 0)
+					}
 
 
-				  // Build the X scale -> it find the best position for each Y axis
-				  x = d3.scalePoint()
-				    .range([0, width])
-				    .domain(dimensions);
-				    
-				    
-				  // The path function take a row of the csv as input, and return x and y coordinates of the line to draw for this raw.
-				  function path(d) {
-				      return d3.line()(dimensions.map(function(p) { return [x(p), y[p](d[p])]; }));
-				  }
+					// Extract the list of dimensions we want to keep in the plot. Here I keep all except the column called Species
+					dimensions = ["marque","tranche_taux","puissance","tranche_age","prix"]
+
+					// For each dimension, I build a linear scale. I store all in a y object
+					var y = {}
+
+					y["prix"] = d3.scaleLinear()
+					      .domain( d3.extent(filtredData, function(d) { return +d["prix"]; }) )
+					      .range([height, 0])
+					      
+					y["puissance"] = d3.scaleLinear()
+					      .domain( d3.extent(filtredData, function(d) { return +d["puissance"]; }) )
+					      .range([height, 0])
+					      
+					y["marque"] = d3.scalePoint()
+					      .domain(filtredData.map(function(d) { return d.marque; }))
+					      .range([height, 0])
+
+					y["tranche_taux"] = d3.scalePoint()
+					      .domain(filtredData.map(function(d) { return d.tranche_taux; }))
+					      .range([height, 0])
 
 
-				  // Draw the lines
-				 svg
-				    .selectAll("myPath")
-				    .data(data)
-				    .enter()
-				    .append("path")
-				      // .attr("class", function (d) { return "line " + d.tranche_prix } ) // 2 class for each line: 'line' and the group name
-				      .attr("d",  path)
-				      .style("fill", "none" )
-				      .style("stroke", function(d){ return( color(d.prix))} )
-				      .style("opacity", 0.5)
-				      .attr("stroke-width", 1.5)
-				      .on("mouseover", mouseover)
-				      .on("mousemove", mousemove)
-				      .on("mouseleave", mouseleave)
+					y["tranche_age"] = d3.scalePoint()
+					      .domain(filtredData.map(function(d) { return d.tranche_age; }))
+					      .range([height, 0])
 
-				  // Draw the axis:
-				  svg.selectAll("myAxis")
-				    // For each dimension of the dataset I add a 'g' element:
-				    .data(dimensions).enter()
-				    .append("g")
-				    .attr("class", "axis")
-				    // I translate this element to its right position on the x axis
-				    .attr("transform", function(d) { return "translate(" + x(d) + ")"; })
-				    // And I build the axis with the call function
-				    .each(function(d) { d3.select(this).call(d3.axisLeft().ticks(5).scale(y[d])); })
-				    // Add axis title
-				    .append("text")
-				      .style("text-anchor", "middle")
-				      .attr("y", -9)
-				      .text(function(d) { return d; })
-				      .style("fill", "black")
+
+					// Build the X scale -> it find the best position for each Y axis
+					x = d3.scalePoint()
+						.range([0, width])
+						.domain(dimensions);
+
+
+					// The path function take a row of the csv as input, and return x and y coordinates of the line to draw for this raw.
+					function path(d) {
+						return d3.line()(dimensions.map(function (p) { return [x(p), y[p](d[p])]; }));
+					}
+
+
+					// Draw the lines
+					svg
+						.selectAll("myPath")
+						.data(filtredData)
+						.enter()
+						.append("path")
+						// .attr("class", function (d) { return "line " + d.tranche_prix } ) // 2 class for each line: 'line' and the group name
+						.attr("d", path)
+						.style("fill", "none")
+						.style("stroke", function (d) { return (color(d.puissance)) })
+						.style("opacity", 0.5)
+						.on("mouseover", mouseover)
+						.on("mousemove", mousemove)
+						.on("mouseleave", mouseleave)
+
+					// Draw the axis:
+					svg.selectAll("myAxis")
+						// For each dimension of the dataset I add a 'g' element:
+						.data(dimensions).enter()
+						.append("g")
+						.attr("class", "axis")
+						// I translate this element to its right position on the x axis
+						.attr("transform", function (d) { return "translate(" + x(d) + ")"; })
+						// And I build the axis with the call function
+						.each(function (d) { d3.select(this).call(d3.axisLeft().ticks(5).scale(y[d])); })
+						// Add axis title
+						.append("text")
+						.style("text-anchor", "middle")
+						.attr("y", -9)
+						.text(function (d) { return d; })
+						.style("fill", "black")
 
 				})
-				</script>
-	    </section>
-	</body>
+
+			}
+		</script>
+	</section>
+</body>
+
 </html>
